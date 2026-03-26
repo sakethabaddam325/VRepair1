@@ -86,6 +86,9 @@ export function mapWlnGroupTicketToRetrieveVo(raw) {
     referredTRCount: s(d.CORRELATION_TR_NUM),
     parentGroupTr: s(d.PARENTGROUPTR),
 
+    // CustomerInfoHeader STANDARD layout
+    lineStatus: s(d.GROUP_STATE),
+
     // CustomerInfoHeader GROUP layout
     trNum: s(d.GROUP_TROUBLE_NUM),
     groupId: s(d.GROUP_ID),
