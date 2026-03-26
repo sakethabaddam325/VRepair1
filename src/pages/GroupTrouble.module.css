@@ -1,0 +1,316 @@
+/* ─── GroupTrouble – Canvas Design System tokens only ─── */
+
+/* ─── Page container ─── */
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-5);
+  color: var(--color-text);
+}
+
+/* ─── Top-level 2-column layout ─── */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-8);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+/* ─── Section content grids ─── */
+
+/* Standard 2-column label-above-input grid */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2) var(--spacing-12);
+  padding: var(--spacing-4);
+}
+
+/* Labels stack above their input */
+.formGrid > label {
+  grid-column: auto;
+  margin-bottom: -2px;
+}
+
+/* Row that spans all columns (for full-width fields) */
+.fullRow {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+/* Row for value spanning rest of row */
+.wideValue {
+  grid-column: 1 / -1;
+}
+
+/* Contact / Reported By: 6-column grid (Name Phone Ext) */
+.contactGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto 160px auto 80px;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+  padding: var(--spacing-4);
+}
+
+/* Other row spans the full contact grid width */
+.contactFullRow {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+}
+
+/* ─── Labels ─── */
+.fieldLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  color: var(--color-text);
+  user-select: none;
+}
+
+.required::after {
+  content: ' *';
+  color: var(--color-accent);
+}
+
+/* ─── Form controls ─── */
+.textInput {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s ease;
+  width: 100%;
+  min-width: 0;
+}
+
+.textInput:focus {
+  border-color: var(--color-border);
+}
+
+/* Required field error state */
+.textInputError {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 1px var(--color-accent);
+}
+
+.fieldError {
+  font-size: 10px;
+  color: var(--color-accent);
+  margin-top: 1px;
+}
+
+.textInput:disabled,
+.textInput:read-only {
+  background-color: var(--color-grey-2);
+  color: var(--color-text-disabled);
+  cursor: default;
+}
+
+/* Input width modifiers */
+.inputXs { max-width: 50px; }
+.inputSm { max-width: 70px; }
+.inputMd { max-width: 100px; }
+.inputLg { max-width: 200px; }
+.inputXl { max-width: 260px; }
+.inputFull { width: 100%; }
+
+/* ─── Select (styled with tokens, no raw <select> look) ─── */
+.select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-24) var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-8) center;
+  background-size: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  width: 100%;
+  min-width: 0;
+}
+
+.select:focus {
+  border-color: var(--color-border);
+}
+
+.selectRequired {
+  composes: select;
+  border-color: var(--color-accent);
+}
+
+/* ─── Checkbox inline pair ─── */
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+/* ─── OASIS Flash link ─── */
+.oasisLink {
+  color: var(--color-info);
+  cursor: pointer;
+  text-decoration: underline;
+  margin-right: var(--spacing-4);
+  font-size: var(--font-size-label);
+}
+
+.oasisLinkDisabled {
+  color: var(--color-text-disabled);
+  cursor: default;
+  text-decoration: none;
+  margin-right: var(--spacing-4);
+  font-size: var(--font-size-label);
+}
+
+/* ─── Status table section ─── */
+.statusLayout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: var(--spacing-10);
+  padding: var(--spacing-4);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .statusLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Vertical Status Timeline ─── */
+.statusTimeline {
+  display: flex;
+  flex-direction: column;
+  max-height: 160px;
+  overflow-y: auto;
+  padding: var(--spacing-4) 0;
+}
+
+.timelineItem {
+  display: flex;
+  gap: var(--spacing-8);
+  min-height: 32px;
+}
+
+.timelineTrack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16px;
+  flex-shrink: 0;
+}
+
+.timelineDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-grey-3);
+  border: 2px solid var(--color-grey-3);
+  flex-shrink: 0;
+}
+
+.timelineDotActive {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(206, 17, 38, 0.15);
+}
+
+.timelineLine {
+  flex: 1;
+  width: 2px;
+  background: var(--color-grey-3);
+  min-height: 12px;
+}
+
+.timelineContent {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-8);
+  padding-bottom: var(--spacing-4);
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+}
+
+.timelineStat {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  min-width: 32px;
+}
+
+.timelineDateTime {
+  color: var(--color-grey-5);
+}
+
+.timelineId {
+  color: var(--color-grey-4);
+  font-size: 10px;
+}
+
+.timelineCurrent .timelineContent {
+  font-weight: var(--font-weight-bold);
+}
+
+/* SS / Referral side grid */
+.statusFields {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+}
+
+/* ─── Action button bar ─── */
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8) 0;
+  border-top: 1px solid var(--color-border-light);
+  margin-top: var(--spacing-8);
+}
+
+/* ─── TextArea overrides ─── */
+.troubleNarrative textarea {
+  text-transform: uppercase;
+}
+
+/* ─── Extended Narrative modal ─── */
+.extNarrativeTextArea textarea {
+  resize: vertical;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--spacing-4);
+}

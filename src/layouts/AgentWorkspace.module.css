@@ -1,0 +1,93 @@
+/* ─── AgentWorkspace Three-Zone Layout ─── */
+
+.workspace {
+  display: grid;
+  grid-template-columns: 240px 1fr 280px;
+  height: calc(100vh - 50px);
+  width: 100%;
+  overflow: hidden;
+  transition: grid-template-columns 0.3s ease;
+}
+
+.workspace.leftCollapsed {
+  grid-template-columns: 36px 1fr 280px;
+}
+
+.workspace.rightCollapsed {
+  grid-template-columns: 240px 1fr 36px;
+}
+
+.workspace.leftCollapsed.rightCollapsed {
+  grid-template-columns: 36px 1fr 36px;
+}
+
+/* ─── Left Rail ─── */
+.leftRail {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-bg-page, #f8f8f8);
+  border-right: 1px solid var(--color-border-light, #e0e0e0);
+  transition: width 0.3s ease, min-width 0.3s ease;
+}
+
+.leftRail.collapsed {
+  overflow: hidden;
+  border-right: none;
+  min-width: 36px;
+}
+
+/* ─── Centre Canvas ─── */
+.centreCanvas {
+  overflow-y: auto;
+  background: var(--color-bg, #ffffff);
+  padding: 8px 12px;
+}
+
+/* ─── Right Rail ─── */
+.rightRail {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-bg-page, #f8f8f8);
+  border-left: 1px solid var(--color-border-light, #e0e0e0);
+  transition: width 0.3s ease, min-width 0.3s ease;
+}
+
+.rightRail.collapsed {
+  overflow: hidden;
+  border-left: none;
+  min-width: 36px;
+}
+
+/* ─── Rail Toggle Button ─── */
+.railToggle {
+  position: sticky;
+  top: var(--spacing-8, 8px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin: var(--spacing-8, 8px) auto;
+  border: 1px solid var(--color-border-light, #e0e0e0);
+  border-radius: var(--radius-4, 4px);
+  background: var(--color-bg, #ffffff);
+  color: var(--color-text-secondary, #6e6e6e);
+  font-size: var(--font-size-caption, 10px);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  line-height: 1;
+  padding: 0;
+}
+
+.railToggle:hover {
+  background: var(--color-bg-hover, #f0f0f0);
+  color: var(--color-text, #1b1b1b);
+}
+
+/* ─── Rail Content ─── */
+.railContent {
+  padding: 4px 8px;
+}

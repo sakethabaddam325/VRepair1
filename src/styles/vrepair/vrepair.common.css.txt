@@ -1,0 +1,263 @@
+/* Login Body */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:  Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+
+select {
+	font-size: 10px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;;
+	border-bottom-color: #C0C0C0;
+	border-bottom-width: 1px;
+	border-left-color: #C0C0C0;
+	border-left-width: 1px;
+	border-right-color: #C0C0C0;
+	border-right-width: 1px;
+	border-top-color: #C0C0C0;
+	border-top-width: 1px;
+	background-color: #fafafa;
+}
+
+input,textarea {
+	text-transform: uppercase;
+}
+
+#grouptrbleSummaryStatus{
+	text-transform: none;
+}
+
+.vrloginbody {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 11px;
+}
+
+.vr_spinner_msg {
+	margin: 4px 2px 4px 2px;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.vr-status-bar {
+	background-color: #463e43;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* For error CSS setting */
+span.errorblock,input.error,select.error,textarea.error,tr.errorRow td.field input,tr.errorRow td.field select
+	{
+	border: 1px solid red;
+	background-color: #FFFFD5;
+	margin: 0px;
+	color: red;
+}
+
+.vr-layout-resizer {
+	background-color: #eeeeee;
+}
+
+.vr-layout-toggler-north-open,.vr-layout-toggler-south-closed {
+	background: url("../../images/toggle_up.gif") no-repeat center bottom;
+}
+
+.vr-layout-toggler-north-closed,.vr-layout-toggler-south-open {
+	background: url("../../images/toggle_dn.gif") no-repeat center bottom;
+}
+
+.vr-layout-north {
+	background-image: url("../../images/north_layout_bg.gif");
+	background-repeat: repeat-x;
+	background-position: left top;
+	/*background-size: 100% */
+}
+
+.vr-toolbar {
+	background-image: url("../../images/toolbar_bg.gif");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	overflow: visible;
+}
+
+.vr-toolbar-menu td {
+	cursor: hand;
+	border: 1px none #e3e3e3;
+	font-size: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-align: center;
+	overflow: visible;
+}
+
+.userinfo {
+	text-align: left;
+	position: relative;
+	align: left;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bolder;
+	color: #333333;
+	overflow: hidden;
+}
+
+.vr-toolbar-menu td:hover {
+	cursor: hand;
+	/*border: 1px none #e3e3e3;*/
+	
+	/* TODO - find good way like verizon.com to highlight the menu hover
+	opacity: .7;
+	filter: Alpha(Opacity =           70);
+	text-decoration: underline;
+	*/ /* zoom:1.02; */
+}
+
+.vr-toolbar-menu td ul{border:solid 4px #32518e;background-color:#ffffdd;}
+.vr-toolbar-menu td ul li{background-color:#ffffdd;}
+
+.vr-toolbar-menu td ul li a {
+	/*border-bottom: 1px solid #a3a3a3;* /* #3c89c3; */
+	/*background-color: #0071c7;*/ /* #939393; #0071c7;*/
+	color: #0066ff;
+	font-weight: bold;
+	text-align: left;
+	font-size: 11px!important;
+	font-family:Microsoft Sans Serif;
+	text-decoration:underline!important;
+	
+}
+
+.vr-toolbar-menu td ul li a.ui-state-disabled {
+	color: #ccc;
+	background-color: #ededed;
+	
+}
+
+/* Override the ui-tabs-panel */
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 0.00em 0.00em;
+	background: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+
+/* vRepair Tab general */
+.vr_tab {
+	min-width: 995px;
+	overflow: auto;
+}
+
+/* Line search Panel related */
+.vrlinesearch {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-style: normal;
+	overflow: hidden;
+}
+
+.vrlabel {
+	font-style: normal;
+	font-size: 11px;
+	font-weight: bold;
+	padding-right: 2px;
+}
+
+.vrfield {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 10px;
+	font-weight: normal;
+	padding-right: 2px;
+}
+
+
+
+.vr_linesearch_fields {
+	margin: 1px 0px 1px 0px;
+	height: 110px;
+}
+
+.ui-jqgrid .ui-jqgrid-htable th div {
+	height: auto;
+	overflow: hidden;
+	padding-right: 4px;
+	padding-top: 2px;
+	position: relative;
+	vertical-align: text-top;
+	white-space: normal !important;
+	font-size: 11px;
+	font-style: normal;
+}
+
+.tr_section_header {
+	font-size: 11px;
+	text-align: left;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	background-image: url(../../images/section_title_bg.jpg);
+	background-repeat: repeat;
+	background-position: left top;
+	background-size: 100%
+}
+
+.tr_indicators {
+	font-weight: normal;
+	color: #FFFFFF;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #878787;
+}
+
+.vr_table_right_border td,.vr_table_right_border th,.vr_table_right_border tr td,.vr_table_right_border tr th
+	{
+	border-right: .5px solid #e3e3e3;
+}
+
+table.vr_wrap_cells tr.jqgrow td {
+	white-space: normal !important;
+	height: auto;
+	vertical-align: text-middle;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+fieldset.contentborder {
+	border: 1px solid #ccc;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+	/* margin: 2px 1px 2px 4px; */
+	font-size: 11px;
+}
+
+.vr-excel-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	background-image: url(../../images/excel_16x16.gif) !important;
+	background-position: 0px 0px;
+}
+
+input[disabled],input[readonly],select[disabled],select[readonly],checkbox[disabled],checkbox[readonly],textarea[disabled],textarea[readonly]
+	{
+	background-color: #ECE8D9;
+}
+.coamenu td ul li a{text-decoration:underline;font-weight:bold;}

@@ -1,0 +1,130 @@
+/* ─── EventSummary – Canvas Design System tokens only ─── */
+
+/* ─── Page container ─── */
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  color: var(--color-text);
+  padding: var(--spacing-5);
+}
+
+/* ─── Form grid: 3 columns of label + control ─── */
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-8) var(--spacing-16);
+  padding: var(--spacing-10);
+}
+
+/* ─── Individual field pair (label above control) ─── */
+.fieldPair {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  min-width: 0;
+}
+
+.fieldLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.fieldLabelRequired {
+  composes: fieldLabel;
+  color: var(--color-error);
+}
+
+/* ─── Text input ─── */
+.textInput {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s ease;
+  width: 100%;
+  min-width: 0;
+}
+
+.textInput:focus {
+  border-color: var(--color-border);
+}
+
+/* ─── Select ─── */
+.select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-24) var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-8) center;
+  background-size: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  width: 100%;
+  min-width: 0;
+}
+
+.select:focus {
+  border-color: var(--color-border);
+}
+
+/* ─── Checkbox field ─── */
+.checkboxField {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  min-height: 34px;
+}
+
+.checkboxInput {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-grey-6);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.checkboxLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* ─── OASIS Flash Information grid ─── */
+.oasisGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  gap: var(--spacing-8) var(--spacing-16);
+  padding: var(--spacing-10);
+  align-items: end;
+}
+
+/* ─── Action bar (Submit / Cancel) ─── */
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-10);
+  margin-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-light);
+}

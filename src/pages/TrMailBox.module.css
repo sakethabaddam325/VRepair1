@@ -1,0 +1,204 @@
+/* ─── TrMailBox – Canvas Design System tokens only ─── */
+
+/* ─── Page container ─── */
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-5);
+  color: var(--color-text);
+}
+
+/* ─── Button toolbar ─── */
+.buttonBar {
+  display: flex;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.totalCount {
+  margin-left: auto;
+  font-size: var(--font-size-caption);
+  align-self: center;
+  color: var(--color-text);
+}
+
+/* ─── Compose modal footer ─── */
+.modalFooter {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* ─── Compose form grid (replaces <table>) ─── */
+.composeGrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+  width: 100%;
+  font-size: var(--font-size-label);
+}
+
+/* ─── Labels ─── */
+.fieldLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  color: var(--color-text);
+  user-select: none;
+}
+
+.fieldLabelTop {
+  composes: fieldLabel;
+  align-self: start;
+  padding-top: var(--spacing-4);
+}
+
+/* ─── Field row (wraps checkbox + input/select + lookup button) ─── */
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+/* ─── Form controls ─── */
+.textInput {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s ease;
+  min-width: 0;
+}
+
+.textInput:focus {
+  border-color: var(--color-border);
+}
+
+.textInput:disabled,
+.textInput:read-only {
+  background-color: var(--color-grey-2);
+  color: var(--color-text-disabled);
+  cursor: default;
+}
+
+/* width modifiers */
+.inputFrom   { width: 600px; }
+.inputAddr   { width: 560px; }
+.inputTrNo   { width: 100px; }
+.inputSubject { width: 565px; }
+.inputLookup { width: 350px; }
+.inputFull   { flex: 1; min-width: 0; }
+
+/* ─── Select ─── */
+.select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  padding: var(--spacing-4) var(--spacing-24) var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-8) center;
+  background-size: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  min-width: 0;
+}
+
+.select:focus {
+  border-color: var(--color-border);
+}
+
+.selectAddr  { width: 600px; }
+.selectTmpl  { width: 350px; }
+.selectUser  { width: 350px; }
+
+/* ─── Checkbox ─── */
+.checkbox {
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.checkbox:disabled {
+  cursor: default;
+}
+
+/* ─── Message body ─── */
+.textarea {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  width: 730px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-5);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s ease;
+  resize: vertical;
+}
+
+.textarea:focus {
+  border-color: var(--color-border);
+}
+
+.textarea:read-only {
+  background-color: var(--color-grey-2);
+  color: var(--color-text-disabled);
+  cursor: default;
+}
+
+.htmlBody {
+  width: 730px;
+  min-height: 200px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-5);
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* ─── Lookup modal grid (replaces <table>) ─── */
+.lookupGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+  font-size: var(--font-size-label);
+}
+
+.lookupWideValue {
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.emailText {
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+}
+
+/* ─── Attachments ─── */
+.attachmentsText {
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+}

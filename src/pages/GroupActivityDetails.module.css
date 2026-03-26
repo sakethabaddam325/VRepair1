@@ -1,0 +1,117 @@
+/* GroupActivityDetails – Canvas design tokens only, zero hardcoded colors */
+
+/* ─── Page Container ─── */
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: 1.4;
+  padding: var(--spacing-5);
+  color: var(--color-text);
+}
+
+/* ─── Section Wrapper ─── */
+.section {
+  margin-bottom: var(--spacing-8);
+}
+
+/* ─── Section Header (matches TroubleReportView pattern) ─── */
+.sectionHeader {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  padding: var(--spacing-4) 0 2px;
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--spacing-4);
+  text-transform: uppercase;
+}
+
+/* ─── Labels ─── */
+.lbl {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* ─── Inputs ─── */
+.inp {
+  height: 22px;
+  padding: 0 var(--spacing-4);
+  font-family: var(--font-family);
+  font-size: 11px;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  outline: none;
+  min-width: 0;
+}
+
+.inp:focus {
+  border-color: var(--color-primary);
+}
+
+/* ─── Activity Summary Grid (6-column: lbl val lbl val lbl val) ─── */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto auto;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+  font-size: 11px;
+}
+
+/* ─── Duration Grid (10-column: 5 pairs of lbl+val) ─── */
+.durationGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
+  gap: var(--spacing-4) var(--spacing-8);
+  align-items: center;
+  font-size: 11px;
+}
+
+/* ─── Dispatch Toolbar ─── */
+.dispatchToolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  margin-bottom: var(--spacing-5);
+  flex-wrap: wrap;
+  font-size: 11px;
+}
+
+.fieldGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.fieldInput {
+  height: 22px;
+  padding: 0 var(--spacing-4);
+  font-family: var(--font-family);
+  font-size: 11px;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  outline: none;
+  width: 120px;
+}
+
+.fieldInput:focus {
+  border-color: var(--color-primary);
+}
+
+.fieldInputSmall {
+  composes: fieldInput;
+  width: 60px;
+}
+
+/* ─── Actions Row ─── */
+.actionsRow {
+  display: flex;
+  gap: var(--spacing-8);
+  justify-content: flex-end;
+  margin-top: var(--spacing-8);
+}

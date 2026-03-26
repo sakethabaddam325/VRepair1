@@ -1,0 +1,12 @@
+[
+  { "id": "JSMITH", "name": "John Smith", "center": "NYCMNY01", "role": "Senior Technician" },
+  { "id": "ADOE", "name": "Alice Doe", "center": "NYCMNY01", "role": "NOC Manager" },
+  { "id": "BCHEN", "name": "Bob Chen", "center": "NYCMNY01", "role": "Splice Technician" },
+  { "id": "CWILSON", "name": "Carol Wilson", "center": "BSTNMA01", "role": "Field Technician" },
+  { "id": "DKIM", "name": "David Kim", "center": "WASHDC01", "role": "Network Engineer" },
+  { "id": "EGARCIA", "name": "Elena Garcia", "center": "DLLSTX01", "role": "Dispatch Coordinator" },
+  { "id": "FJONES", "name": "Frank Jones", "center": "CLEVOH01", "role": "Tier 2 Support" },
+  { "id": "GLEE", "name": "Grace Lee", "center": "NYCMNY01", "role": "Team Lead" },
+  { "id": "HPATEL", "name": "Harish Patel", "center": "BSTNMA01", "role": "Senior Technician" },
+  { "id": "ITHOMAS", "name": "Irene Thomas", "center": "WASHDC01", "role": "NOC Analyst" }
+]

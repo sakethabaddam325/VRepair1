@@ -1,0 +1,66 @@
+/* ─── Workspace Compact Overrides ─── */
+/* Override Canvas Collapsible sizing for the three-zone workspace */
+/* 8-point grid: all spacing multiples of 8px */
+
+/* Remove fixed widths — let panels fill their container */
+.workspace-compact [class*="level1"],
+.workspace-compact [class*="level2"],
+.workspace-compact [class*="level3"],
+.workspace-compact [class*="level4"] {
+  width: 100% !important;
+}
+
+/* Compact header — 32px height instead of 56px */
+.workspace-compact [class*="header"] {
+  min-height: 32px !important;
+  padding: 4px 8px !important;
+  gap: 8px !important;
+}
+
+/* Smaller icon square — 24px instead of 40px */
+.workspace-compact [class*="iconSquare"] {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  border-radius: 3px !important;
+}
+
+.workspace-compact [class*="iconSquare"] svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* Smaller title — 13px instead of 20px */
+.workspace-compact [class*="collapsible"] > [class*="header"] > [class*="title"] {
+  font-size: 13px !important;
+  line-height: 16px !important;
+}
+
+/* Tighter content padding */
+.workspace-compact [class*="content"] {
+  padding: 8px !important;
+  padding-left: 8px !important;
+}
+
+/* Tighter divider margin */
+.workspace-compact [class*="divider"] {
+  margin: 0 8px !important;
+}
+
+/* Remove heavy box-shadow on hover */
+.workspace-compact [class*="collapsible"]:not([class*="open"]):hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ─── Stepper compact ─── */
+.workspace-compact [class*="stepper"] {
+  padding: 4px 0 !important;
+}
+
+.workspace-compact [class*="stepper"] [class*="step"] {
+  font-size: 11px !important;
+}
+
+.workspace-compact [class*="stepper"] [class*="connector"] {
+  font-size: 10px !important;
+}

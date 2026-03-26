@@ -1,0 +1,100 @@
+/* ─── GroupActivityLog ─── Canvas Design System tokens only ─── */
+
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-5);
+  color: var(--color-text);
+}
+
+/* ─── Toolbar ─── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-5);
+  flex-wrap: wrap;
+}
+
+.viewToggleGroup {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+/* ─── Filter Controls ─── */
+.findInput {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--spacing-4) var(--spacing-8);
+  width: 140px;
+  outline: none;
+}
+
+.findInput::placeholder {
+  color: var(--color-grey-4);
+}
+
+.findInput:focus {
+  border-color: var(--color-grey-6);
+}
+
+.selectControl {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  padding: var(--spacing-4) var(--spacing-8);
+  width: 120px;
+  outline: none;
+  cursor: pointer;
+}
+
+.selectControl:focus {
+  border-color: var(--color-grey-6);
+}
+
+.functionSelect {
+  composes: selectControl;
+  width: 240px;
+}
+
+/* ─── Right-aligned actions area ─── */
+.actionsRight {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin-left: auto;
+}
+
+/* ─── DataGrid wrapper ─── */
+.gridWrapper {
+  width: 100%;
+}
+
+/* ─── Next page section ─── */
+.nextSection {
+  text-align: center;
+  margin-top: var(--spacing-5);
+}
+
+/* ─── Single-row text area section ─── */
+.singleRowSection {
+  margin-top: var(--spacing-8);
+}
+
+/* ─── Function panel modal content ─── */
+.functionPanelContent {
+  padding: var(--spacing-5);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-grey-4);
+}

@@ -1,0 +1,10 @@
+{
+  "boldFont": false,
+  "highlightColor": "#FFF9C4",
+  "textColor": "#1A1A1A",
+  "escLevel1": "#FF5252",
+  "escLevel2": "#FF9800",
+  "escLevel3": "#FFC107",
+  "tabOption": "myWorklist",
+  "defaultWorklistId": "WL001"
+}

@@ -1,0 +1,388 @@
+{
+    "GROUP_TYPE": "MDG",
+    "MERGED_GROUP_COUNT": "1",
+    "LFA": [
+      
+    ],
+    "CUSTOMERPROVISIONEDNUM": [
+      
+    ],
+    "RELEASE_TO_TEST": "DO NOT TEST",
+    "STICKYNOTES_READONLY_IND": "N",
+    "GROUP_STATE": "GF",
+    "WORKING_LINES_NUM": "0",
+    "ACMPICKUPIND": "N",
+    "MAINT_REPEATER_FLAG": "N",
+    "ASSIGNED_USER_NAME": "",
+    "PPM_IND": "",
+    "GROUPTROUBLEAUTOCLOSEIND": "N",
+    "SUBSLOT2": "",
+    "SUBSLOT3": "",
+    "OLT_PORT": "",
+    "VLOD_TAB_FLAG": "",
+    "CONTACTNUM": "0",
+    "NODE": "ACTNMAMA0AW",
+    "ACTIVITY_STATUS_DATE_GROUP": [
+      "01/12/2022 06:38",
+      "05/21/2023 12:57"
+    ],
+    "PARENTGROUPTR": "",
+    "GROUP_ID": "A452R",
+    "LOSSOFDIVERSITYIND": "Y",
+    "CONTACTPREFERREDIND": [
+      
+    ],
+    "RESOLUTION_COMPANY_NAME": "",
+    "GROUPSERVICETYPECODE": "OTHER",
+    "RESPONSIBLE_CENTER_ID": "1",
+    "DISPATCH_REMARKS": "",
+    "LOC_A_COUNTRY_CODE": "USA",
+    "FLASH_CREATED_INVREPAIR": "N",
+    "OASISHOLDFORREVIEW": "N",
+    "BIG_REPORT": "",
+    "P1OFFICE_NAME": "",
+    "DISPATCHTECHID": [
+      "",
+      ""
+    ],
+    "MERGED_CORRID": [
+      "2013891921"
+    ],
+    "PRODUCTCODE": [
+      
+    ],
+    "StatusDesc": "SUCCESS",
+    "CHILDGROUP_REGIONID": [
+      "1",
+      "2",
+      "3"
+    ],
+    "ENC_NCC_TYPE": "",
+    "MORNING_CALL_NUM": "",
+    "USER_CENTER_FLAG": "N",
+    "RESOLUTION_CATEGORY": "",
+    "ENC_TKT_TYPE": "",
+    "CONTACTINFO": [
+      
+    ],
+    "IPTV_SVC_TYPE": "",
+    "ACTIVITY_STATUS_GROUP": [
+      "NM",
+      "AP"
+    ],
+    "RPASTATUS": "",
+    "TROUBLE_REPORT_OWNER_NAME": "LUKKA, GOPALA K",
+    "CUSTOMERAFFECTEDNUM": [
+      
+    ],
+    "KEYWORDS": "",
+    "OUTOFSERVICEIND": "Y",
+    "VENDOR_NAME": "",
+    "OASIS_BANDWIDTH": "",
+    "SITE911": "",
+    "DEFAULTSTATE": "MA",
+    "TRUNKMEMBERNUMBER": "",
+    "PRIORITY": "",
+    "StatusCode": "SUCCESS",
+    "NUMPROVISIONEDCUSTOMERS": "",
+    "EQUIPMENT_LINETEST_IND": "N",
+    "REASSIGNED_ALLOW_FLAG": "Y",
+    "EXPIRED_FLAG_GROUP": [
+      "N",
+      "N"
+    ],
+    "GROUP_TROUBLE_NUM": "MAAA04LK91",
+    "MASTARS_CREATED_INVREPAIR": "N",
+    "COSTINGRESTORED": "N/A",
+    "WHOLESALE_ID": "",
+    "CHRONIC_FLAG": "N",
+    "HAS_911_IND": "N",
+    "OLT_NODE": "",
+    "P1OFFICE_STATE": "",
+    "OLT_SLOT": "",
+    "TSPCODE": "",
+    "EXCEPTIONCODE": "DISPPPM",
+    "PICS_TAB_FLAG": "N",
+    "WIRE_CENTER": "978263",
+    "CHANNEL_NUM": [
+      
+    ],
+    "MASTARSEVENTID": "",
+    "OFFICE_ZIPCODE": "",
+    "VOL_REASON": "",
+    "PON_INVENTORY_AVAILABLE": "N",
+    "REGION_ID": "2",
+    "EST_RESTORAL": "05/09/2022 19:30",
+    "AFFECTED_VOICE_SERVICE": "",
+    "FTTP_FLAG": "",
+    "RELEASE_TO_TEST_DATE": "",
+    "NMA_TROUBLEREPORTNUM": "",
+    "CONTACT_BY_NAME": "",
+    "ALARM_CLEAREDIND": "",
+    "TR_ATTACHED_NUM": "0",
+    "ETMS_TICKET_NUM": "",
+    "IPTV_CHANNEL_NAME": [
+      
+    ],
+    "LOSSOFVISIBILITYIND": "Y",
+    "NMADETAILS_IND": "N",
+    "WIRECENTERNAME": "ACTON,MA",
+    "OFFICE_CITY": "",
+    "CNTRL_GROUPTROUBLENUM": "",
+    "WSC": "OUT",
+    "GRP_TIME_ZONE": "EST",
+    "TO_PAIR_NUM": "",
+    "APPL_ID": "VREPAIR",
+    "RESPONSIBLE_CENTER": "PATESTCENTER",
+    "THRESHOLDED_TR_NUM": "0",
+    "DTIX_TAB_IND": "",
+    "TR_ATTACHED_CENTER_NUM": "0",
+    "IPTV_IMPACT": "",
+    "OFFICE_LOCFLOOR": "",
+    "P1OFFICE_LOCFLOOR": "",
+    "ETMSSHADOW_WORKGROUP_ID": [
+      
+    ],
+    "ISFLASHOPEN": "",
+    "PROPERTY_ID": "",
+    "OFFICE_ADDRESS": "",
+    "GROUP_STATE_CODE": "MA",
+    "TR_RESTORED_NUM": "0",
+    "TIER2_IND": "Y",
+    "ESCALATION_LEVEL": "0",
+    "NMA_MASTER_TICKET_INFO": "",
+    "SLA": "",
+    "WHITEBOARDWIRECENTERID": [
+      
+    ],
+    "GPATTACHED": "0",
+    "NPANXX": "978264",
+    "REPORTED_DATE_GROUP": "01/12/2022 06:38",
+    "SEVERITYCODE": "4",
+    "TROUBLE_REPORT_OWNER": "LUKKAGO",
+    "CNTRL_GROUPTROUBLEIND": "Y",
+    "ALARM_TYPE": "",
+    "IPTV_CHANNEL_PROGRAM_ID": [
+      
+    ],
+    "EXTERNAL_REF_DETAILS_AVAILABLE_IND": "N",
+    "OWNING_CENTER": "PATESTCENTER",
+    "ACNPICKUPIND": "N",
+    "IPTV_CHANNEL_NUM": [
+      
+    ],
+    "SPECIALSTUDYCODE1": "",
+    "STICKYNOTES": "",
+    "CORRELATION_TR_NUM": "0",
+    "SPECIALSTUDYCODE2": "",
+    "TRUNKGROUPNUM": "",
+    "SPECIALSTUDYCODE3": "",
+    "IPTV_PROVISIONED_FLAG": "N",
+    "WORKING_SP_LINES_NUM": "0",
+    "VSO": [
+      
+    ],
+    "P1OFFICE_ADDRESS": "",
+    "GROUPMETRICSEXCLUDE": "N",
+    "GROUP_OUTAGE_CATEGORY_SOURCE": "MANUAL",
+    "DEFAULTCITY": "NA",
+    "PROV_COUNT_JSON": {
+      "provData": [
+        
+      ],
+      "total": -1
+    },
+    "SES_PRIORITY": "",
+    "WHITEBOARDWIRECENTERNAME": [
+      
+    ],
+    "IMPACT_TYPE": "",
+    "NMA_HOST": "",
+    "REF_TROUBLEREPORTNUM": "",
+    "OASIS_EXCLUDE": "Y",
+    "VOL_STATE": [
+      
+    ],
+    "SCID": "",
+    "MAINTENANCE_CENTER": "PATESTCENTER",
+    "REGIONAL_TROUBLEREPORTNUM": [
+      "MDAA104813",
+      "MAAA04LK92",
+      "NYAA405210"
+    ],
+    "WHITE_BOARD_NUM": "",
+    "TRANSMISC_TYPE": "",
+    "REPORT_STATUSCODE": [
+      "OPN",
+      "OPN",
+      "OPN"
+    ],
+    "NUMBEROFCOISOLATION": "",
+    "FLASHTIMEZONE": "",
+    "VLOV_TAB_FLAG": "",
+    "OFFICE_DESCRIPTION": "",
+    "GROUP_TROUBLE_NARR": "Automation Testing",
+    "ACTIVITY_DETAILS": {
+      "ACTIVITY_DETAILS_LIST": [
+        {
+          "TROUBLEREPORTNUM": "123456",
+          "ACTIVITYDETAILSSEQNUM": "1",
+          "DISPATCHLOCATIONROUTINGADDRESS": "LOC123",
+          "DISPATCHCENTERROUTINGADDRESS": "CTR456",
+          "DISPATCHCENTERTYPE": "TYPE1",
+          "ENDOFCIRCUIT": "END1",
+          "ACTIVITYFUNCTIONCODE": "FUNC01",
+          "COADIND": "Y",
+          "WORKTYPE": "REPAIR",
+          "STARTDATE": "2024-03-01T08:00:00Z",
+          "ENDDATE": "2024-03-01T10:00:00Z",
+          "DISPATCHENDDATE": "2024-03-01T09:30:00Z",
+          "ACTIVITYDURATIONNUM": "90",
+          "DISPATCHCENTERNAME": "Center A",
+          "CENTERNAME": "Main Center",
+          "CENTERTYPECODE": "C1",
+          "ACTIVITYFUNCTIONDESC": "Repair Activity",
+          "REPORTEDDATE": "2024-03-01T07:45:00Z",
+          "ACTIVITYSTATUSCODE": "COMPLETE",
+          "DISPATCHTROUBLEREPORTNUM": "654321",
+          "EXPIREDDATE": "2024-03-02T00:00:00Z",
+          "ADJUSTED_DURATION": "85",
+          "DISPATCHOUTSEQ": "2"
+        }
+      ],
+      "DISPATCHCENTERROUTINGADDRESS": "CTR456",
+      "DISPATCHLOCATIONROUTINGADDRESS": "LOC123",
+      "CUSTOMERNOACCESSTIME": "0",
+      "COMPANYNOACCESSTIME": "0",
+      "ACTUALDURATIONTIME": "90",
+      "CENTERDURATIONTIME": "90",
+      "REFERRALDURATIONTIME": "0",
+      "HANDOFFTIME": "2024-03-01T08:05:00Z",
+      "OUTSERVICETIME": "2024-03-01T08:10:00Z",
+      "EBVERIFICATIONTIME": "2024-03-01T08:15:00Z",
+      "REBATEMINUTES": "0",
+      "TOTAL_DURATION": "90",
+      "SUSPEND_DURATION": "0",
+      "HANDOFF_DSL_DURATION": "0",
+      "HDEWG_DURATION": "0",
+      "HANDOFF_IXC_DURATION": "0",
+      "MAINT_DURATION": "0",
+      "MONITOR_DURATION": "0",
+      "RESTOREDDATE": "2024-03-01T10:00:00Z",
+      "UPDATEFLAG": "N",
+      "NUMOFHANDOFFS": "1",
+      "HANOFFETMS_DURATION": "0",
+      "DISPATCHCENTER_TEXT": "Dispatch Center Text",
+      "DISPATCHLOCATION_TEXT": "Dispatch Location Text"
+    },
+    "EXCRESTORALDATETIME": "",
+    "P1OFFICE_CITY": "",
+    "STATUS_COMMENT": "",
+    "DEFAULTCOUNTRY": "USA",
+    "CHANNEL_NAME": [
+      
+    ],
+    "GROUP_NAME": "ACTNMAMA0AW/3/4/1",
+    "EVENT_ROOTCAUSE_STATE": "",
+    "OASISFLASHID": "",
+    "RESOLUTION_COMPANY_ID": "",
+    "IPPEGIMPACT": "",
+    "CUSTOMERAFFECTEDIND": "N",
+    "CHANNEL_PROGRAM_ID": [
+      
+    ],
+    "CONTACTREPORTIND": [
+      
+    ],
+    "WHITEBOARDWIRECENTERCLLICODE": [
+      
+    ],
+    "REASON_FOR_GROUP": "F",
+    "ALARM_CLEARED_DATE": "",
+    "REPORT_CATEGORY": "GP",
+    "CHRONIC_NUM": "0",
+    "CHANNEL_SVC_TYPE": [
+      
+    ],
+    "GROUP_SUB_COMPONENT": "",
+    "RESTORE_DELAY_REASON_ID": "",
+    "P1OFFICE_DESCRIPTION": "",
+    "ASSIGNED_USER": "",
+    "TOTAL_GROUP_EXTERNALS": "0",
+    "FLASHORGID": "",
+    "AFFECTED_VIDEO_SERVICE": "0",
+    "CORRELATION_ID": "2013891921",
+    "CREATED_BY": "LUKKAGO",
+    "FROM_PAIR_NUM": "",
+    "REPORTED_BY_NAME": "",
+    "EVENTID": "",
+    "NMADS3EQUIVFACTOR": "",
+    "GRPREASON": "",
+    "OLT_SHELF": "",
+    "IDR_ID": "",
+    "GROUPSYMPTOMTYPECODE": "OTHER",
+    "NMA_RELATEDTICKETS_IND": "N",
+    "PRODUCT_DETAILS": {
+      "PRODUCT_LIST": [
+        {
+          "NETWORKELEMENTID": "ACTNMAMA0AW/3/4/1",
+          "ISPRIMARYPRODUCT": "Y",
+          "PRODUCT_TYPE": "EQUIPMENT",
+          "DETECTIONDATE": "01/12/2022 06:38",
+          "GROUP_TYPE": "MDG",
+          "SOURCE": "VI",
+          "RELTOTEST": "DO NOT TEST",
+          "PRODUCTID": "1",
+          "RELTOTESTDATE": ""
+        }
+      ]
+    },
+    "ENCSWITCHOE": "",
+    "AFFECTED_DATA_SERVICE": "",
+    "ECMPGROUPID": "",
+    "HIERARCHY_LEVEL": "PORT",
+    "PPMTNOATTACHIND": "N",
+    "APPLICATION_ID": "1",
+    "ETMSSHADOW_WORKGROUP": [
+      ""
+    ],
+    "DAYLIGHTSAVINGIND": "Y",
+    "MERGED_GROUP_ID": [
+      "A452R"
+    ],
+    "GROUPCOMPONENTCODE": "",
+    "RING_LIST_IND": "N",
+    "LOC_Z_COUNTRY_CODE": "USA",
+    "EQUIPMENT_CLASS": "",
+    "AE_ACTIVE_IND": "",
+    "VHO": [
+      
+    ],
+    "OFFICE_NAME": "",
+    "NMADS3EQUIVSOURCE": "",
+    "PRE_BAND_USE": "3/CO",
+    "CIRCUIT_LIST_IND": "N",
+    "CONTACTTYPE": [
+      
+    ],
+    "LOSSOFVISIBILITY_TAB_FLAG": "",
+    "OFFICE_STATE": "",
+    "P1OFFICE_ZIPCODE": "",
+    "CREATED_BY_NAME": "LUKKA, GOPALA K",
+    "PRODUCT_ID": "",
+    "ETMSSHADOWMAPPINGIND": "N",
+    "EQUIPMENT_DIVERSITY_DETAILS": {
+      "TOTAL": -1,
+      "EQUIPMENT_DIVERSITY_COUNT_JSON_DATA": [
+        
+      ]
+    },
+    "MERGED_GROUP_NAME": [
+      "ACTNMAMA0AW/3/4/1"
+    ],
+    "GROUP_OUTAGE_CATEGORY_CODE": "2",
+    "NUMAFFECTEDCUSTOMERS": "2",
+    "WARNING_MESSAGE": "",
+  
+    "LOSSOFDIVERSITY_TAB_FLAG": ""
+}

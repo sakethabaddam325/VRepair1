@@ -1,0 +1,16 @@
+/* ─── VRepairLayout ─── */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--color-bg-page);
+  font-family: var(--font-family);
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}

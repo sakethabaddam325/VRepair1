@@ -1,0 +1,91 @@
+/* ─── TicketHeader ─── */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-light);
+  min-height: 32px;
+}
+
+/* ─── Left section: TR# + status + priority ─── */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.trNumber {
+  font-size: 13px;
+  font-weight: var(--font-weight-bold);
+  line-height: 16px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+/* ─── Center section: SLA + Assigned ─── */
+.center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+
+.slaBlock {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.slaLabel {
+  color: var(--color-grey-4);
+}
+
+.slaGreen {
+  color: var(--color-green-3);
+  font-weight: var(--font-weight-bold);
+}
+
+.slaOrange {
+  color: var(--color-orange-3);
+  font-weight: var(--font-weight-bold);
+}
+
+.slaRed {
+  color: var(--color-red-3);
+  font-weight: var(--font-weight-bold);
+}
+
+.assignedBlock {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.assignedLabel {
+  color: var(--color-grey-4);
+}
+
+.assignedValue {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+}
+
+/* ─── Right section: action buttons ─── */
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  flex-shrink: 0;
+}

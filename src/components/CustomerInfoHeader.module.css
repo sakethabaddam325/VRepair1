@@ -1,0 +1,209 @@
+/* ─── CustomerInfoHeader – Canvas Design System tokens ─── */
+
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  background-color: var(--color-bg);
+}
+
+/* ─── Header Bar (black theme per --color-grey-6) ─── */
+.headerBar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-grey-6);
+  padding: var(--spacing-4) var(--spacing-8);
+  gap: var(--spacing-8);
+}
+
+.collapseToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-text-inverse);
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.collapseToggle svg {
+  color: var(--color-text-inverse);
+}
+
+.headerTitle {
+  color: var(--color-text-inverse);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Header Action Buttons ─── */
+.headerActions {
+  display: flex;
+  gap: var(--spacing-5);
+  flex-shrink: 0;
+}
+
+/* ─── Content Panel ─── */
+.contentPanel {
+  padding: var(--spacing-5);
+}
+
+/* ─── Metadata Grid (replaces <table>) ─── */
+.metadataGrid {
+  display: grid;
+  grid-template-columns: repeat(5, auto 1fr);
+  gap: var(--spacing-2) var(--spacing-4);
+  align-items: center;
+  width: 100%;
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+}
+
+.metadataLabel {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+  background-color: var(--color-grey-2);
+  border: 1px solid var(--color-border-light);
+  padding: var(--spacing-2) var(--spacing-4);
+  white-space: nowrap;
+}
+
+.metadataValue {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+  padding: var(--spacing-2) var(--spacing-4);
+  min-height: 20px;
+  border: 1px solid var(--color-border-light);
+}
+
+/* Span helpers for metadata values that cross multiple grid columns */
+.spanCol2 {
+  grid-column: span 2;
+}
+
+.spanCol3 {
+  grid-column: span 3;
+}
+
+.spanCol4 {
+  grid-column: span 4;
+}
+
+.spanCol6 {
+  grid-column: span 6;
+}
+
+.spanCol7 {
+  grid-column: span 7;
+}
+
+.spanCol8 {
+  grid-column: span 8;
+}
+
+/* ─── GROUP layout: 4 pairs per row (8-column grid) ─── */
+.metadataGridGroup {
+  display: grid;
+  grid-template-columns: repeat(4, auto 1fr);
+  gap: var(--spacing-2) var(--spacing-4);
+  align-items: center;
+  width: 100%;
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+}
+
+/* Span helpers for Group layout */
+.groupSpanCol3 {
+  grid-column: span 3;
+}
+
+.groupSpanCol5 {
+  grid-column: span 5;
+}
+
+.groupSpanCol7 {
+  grid-column: span 7;
+}
+
+/* ─── Standard layout: 4 pairs per row (8-column grid) ─── */
+.metadataGridStandard {
+  display: grid;
+  grid-template-columns: repeat(4, auto 1fr);
+  gap: var(--spacing-2) var(--spacing-4);
+  align-items: center;
+  width: 100%;
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+}
+
+.standardSpanCol7 {
+  grid-column: span 7;
+}
+
+/* ─── Tooltip ─── */
+.tooltip {
+  position: fixed;
+  background-color: var(--color-yellow-1);
+  border: 1px solid var(--color-border-light);
+  padding: var(--spacing-4) var(--spacing-8);
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  z-index: 9999;
+  max-width: 250px;
+  pointer-events: none;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── UBI Modal body ─── */
+.ubiModalBody {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.ubiLabel {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+}
+
+.ubiInput {
+  width: 200px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-4);
+}
+
+.ubiInput:focus {
+  outline: none;
+  border-color: var(--color-border);
+}
+
+/* ─── Modal Footer ─── */
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-8);
+}
+
+/* ─── Tooltipped cell ─── */
+.tooltipCell {
+  cursor: default;
+}

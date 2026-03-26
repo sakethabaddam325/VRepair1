@@ -1,0 +1,288 @@
+/* ─── Page Container ─── */
+.page {
+  padding: 4px 8px;
+  font-family: var(--font-family);
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+/* ─── Flags Row (Chronic, ESC, NMA) ─── */
+.flagsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: 4px;
+}
+
+.flagLabel {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-5);
+}
+
+/* ─── Shared Form Controls ─── */
+.lbl {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-5);
+  white-space: nowrap;
+  align-self: center;
+}
+
+.lblFlash {
+  composes: lbl;
+  color: var(--color-red-3);
+}
+
+.inp {
+  height: 26px;
+  padding: var(--spacing-2) var(--spacing-4);
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  outline: none;
+  min-width: 0;
+  transition: border-color 0.15s ease;
+}
+
+.inp:focus {
+  border-color: var(--color-primary);
+}
+
+.inpXs { width: 60px; }
+.inpSm { width: 120px; }
+.inpMd { width: 140px; }
+.inpSmall { width: 80px; }
+
+.sel {
+  height: 22px;
+  padding: 0 2px;
+  font-family: var(--font-family);
+  font-size: 11px;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: 2px;
+  background: var(--color-bg);
+  outline: none;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.sel:focus {
+  border-color: var(--color-primary);
+}
+
+.selRequired {
+  border-color: var(--color-accent);
+}
+
+.selXs { width: 50px; }
+
+.textarea {
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 11px;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: 2px;
+  background: var(--color-bg);
+  padding: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.textareaSm {
+  composes: textarea;
+  max-height: 48px;
+}
+
+/* ─── Main Two-Column Layout ─── */
+.mainColumns {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 8px;
+}
+
+/* ─── Left Column ─── */
+.leftCol {
+  min-width: 0;
+}
+
+/* ── Top Fields Grid (4-column: lbl val lbl val) ── */
+.topFieldsGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 3px 6px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+/* ── Counters ── */
+.countersRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.counterLabel {
+  font-size: 11px;
+  color: var(--color-grey-5);
+}
+
+/* ── Contact Grid (Reported By / Contact rows) ── */
+.contactGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  gap: var(--spacing-4) var(--spacing-6);
+  align-items: center;
+  padding: var(--spacing-4) 0;
+}
+
+/* ── Other Row ── */
+.otherRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto auto;
+  gap: var(--spacing-4) var(--spacing-6);
+  align-items: center;
+  padding: var(--spacing-4) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+/* ─── Section Headers ─── */
+.sectionHeader {
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary, #0066cc);
+  padding: 4px 0 2px;
+  border-bottom: 1px solid var(--color-border-light);
+  margin: 4px 0 4px;
+  text-transform: uppercase;
+}
+
+/* ─── Trouble Info Grid ─── */
+.troubleInfoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 8px;
+}
+
+.narrativeCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.troubleFields {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 3px 4px;
+  align-items: center;
+}
+
+/* ─── Right Column (STATUS) ─── */
+.rightCol {
+  min-width: 0;
+  border-left: 1px solid var(--color-border-light);
+  padding-left: 8px;
+}
+
+.statusTable {
+  margin: 4px 0;
+}
+
+.stHeader {
+  display: grid;
+  grid-template-columns: 20px 40px 1fr 40px;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary, #0066cc);
+  padding: 2px 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.stRow {
+  display: grid;
+  grid-template-columns: 20px 40px 1fr 40px;
+  gap: 4px;
+  font-size: 10px;
+  color: var(--color-text);
+  padding: 2px 0;
+  border-bottom: 1px solid var(--color-grey-1, #f5f5f5);
+}
+
+.statusFields {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3px 6px;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.refRow {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* ─── Bottom Section: Details + Dispatch ─── */
+.bottomColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.bottomSection {
+  min-width: 0;
+}
+
+/* ── Details ── */
+.detailsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.detailsRow {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 2px 0;
+}
+
+/* ── Dispatch ── */
+.dispatchGrid {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  gap: 3px 6px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.dispatchRemarks {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px 0;
+}
+
+.submitRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 0;
+}

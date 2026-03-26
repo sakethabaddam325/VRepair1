@@ -1,0 +1,127 @@
+/* ─── TopPanel — Canvas Design System ─── */
+
+.vr-top-panel {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+/* ─── Header Bar ─── */
+
+.vr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-16);
+  padding: var(--spacing-8) var(--spacing-20);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-light);
+  color: var(--color-text);
+}
+
+/* ─── Left: Brand + Badge ─── */
+
+.vr-header__left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-10);
+  flex-shrink: 0;
+}
+
+.vr-header__brand {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-title);
+  letter-spacing: -0.25px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* ─── Center: Search ─── */
+
+.vr-header__center {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  flex-shrink: 0;
+}
+
+.vr-header__search-label {
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.vr-header__select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  height: var(--btn-height-sm);
+  padding: var(--spacing-4) var(--spacing-8);
+  border: 1px solid var(--color-grey-4);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  outline: none;
+}
+
+.vr-header__select:focus {
+  border-color: var(--color-grey-3);
+}
+
+.vr-header__search-input {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  height: var(--btn-height-sm);
+  width: 180px;
+  padding: var(--spacing-4) var(--spacing-12);
+  border: 1px solid var(--color-grey-4);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  outline: none;
+}
+
+.vr-header__search-input::placeholder {
+  color: var(--color-grey-4);
+}
+
+.vr-header__search-input:focus {
+  border-color: var(--color-grey-3);
+  box-shadow: 0 0 0 2px var(--color-blue-1);
+}
+
+/* ─── Right: Nav + User ─── */
+
+.vr-header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.vr-header__user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-5);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.vr-header__user-id {
+  font-weight: var(--font-weight-bold);
+}
+
+/* ─── Main Content ─── */
+
+.vr-main-content {
+  position: relative;
+}

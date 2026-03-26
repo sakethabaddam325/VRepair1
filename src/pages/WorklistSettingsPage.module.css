@@ -1,0 +1,109 @@
+/* ─── WorklistSettingsPage ─── */
+.page {
+  padding: var(--spacing-16) var(--spacing-24);
+  font-family: var(--font-family);
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-32);
+}
+
+/* ─── Main Layout: settings + preview side-by-side ─── */
+.mainContent {
+  display: flex;
+  gap: var(--spacing-24);
+  align-items: flex-start;
+}
+
+.sectionsColumn {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.previewColumn {
+  flex: 1;
+  min-width: 260px;
+  position: sticky;
+  top: var(--spacing-16);
+}
+
+.previewTitle {
+  font-size: var(--font-size-heading-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-7);
+  margin: 0 0 var(--spacing-12);
+}
+
+/* ─── Section Body ─── */
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  padding: var(--spacing-16);
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--spacing-12);
+}
+
+.dropdownField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.fieldLabel {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey-6);
+}
+
+.select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  padding: var(--spacing-4) var(--spacing-24) var(--spacing-4) var(--spacing-5);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23333333' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-8) center;
+  background-size: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  width: 100%;
+}
+
+.select:focus {
+  border-color: var(--color-border);
+}
+
+/* ─── Toggle Rows ─── */
+.toggleRow {
+  display: flex;
+  gap: var(--spacing-24);
+  flex-wrap: wrap;
+}
+
+.toggleField {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+/* ─── Action Buttons ─── */
+.actionButtons {
+  display: flex;
+  gap: var(--spacing-12);
+  padding-top: var(--spacing-8);
+}

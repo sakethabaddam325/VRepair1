@@ -1,0 +1,2050 @@
+/* value field in Line record Defnition
+------------------*/
+
+.vrValue {
+	font-style: normal;
+	font-size: 12px;
+	font-weight: normal;
+	padding-right: 2px;
+}
+
+/* Body Defnition
+------------------*/
+
+body{
+	margin:0;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	font-family:Arial;
+	font-size:12px;
+}
+
+/* Font styles applies to all the tags defined within td
+---------------------------------------------------------*/
+
+td{
+	font-weight:bold;
+	font-family:Arial;
+	font-size:12px;
+}
+
+
+
+/* requiredfields style
+------------------------*/
+
+.requiredFields{
+	color: black;
+}
+/*
+.requiredFields:before{
+	color: #ff0000!important;
+	content:"*";
+}
+*/
+td.requiredFields{
+	background:url(../images/mandatory-symbol.png) 0 3px no-repeat;
+	padding-left:7px;
+
+}
+span.requiredFields{
+	background:url(../images/mandatory-symbol.png) 0 0px no-repeat;
+	padding-left:7px;
+
+}
+label.requiredFields{
+	background:url(../images/mandatory-symbol.png) 0 3px no-repeat;
+	padding-left:7px;
+
+}
+strong.requiredFields{
+	background:url(../images/mandatory-symbol.png) 0 3px no-repeat;
+	padding-left:7px;
+
+}
+
+fieldset.contentborder {
+	border: 1px solid #ccc;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+	font-size: 12px;
+
+}
+
+/* readonly type style 
+-----------------------*/
+
+.readOnlyValues{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:normal;
+}
+
+/* For all the Legend types
+----------------------------*/
+
+legend{
+	color:#0066FF;
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight: bold; 
+	 margin-left: 5px;
+}
+legend  a{cursor:pointer;color:#0066FF;text-decoration: none;outline:none!important;}
+legend table td a{font-size:11px!important;cursor:pointer;color:#0066FF;}
+legend table td .newbutton{background-image:none!important;}
+legend table td a .ui-button-text{background-image:none!important;}
+
+
+
+/* Fix for Gap between searchpanel and toppanel
+-----------------------------------------------*/
+
+form {margin: 0px;}
+
+
+/* Applies to all the html select boxes
+--------------------------------------- */
+
+select {
+	font-size: 12px;
+	font-family:Arial;
+	font-weight:normal;
+	border-bottom-color: #C0C0C0;
+	border-bottom-width: 1px;
+	border-left-color: #C0C0C0;
+	border-left-width: 1px;
+	border-right-color: #C0C0C0;
+	border-right-width: 1px;
+	border-top-color: #C0C0C0;
+	border-top-width: 1px;
+	background-color:#ffffff;
+}
+
+
+/* Use this for inputs and text area. 
+-------------------------------------*/
+input,textarea {
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:Arial;
+	font-size:12px;
+}
+
+#grouptrbleSummaryStatus{
+	text-transform: none;
+}
+
+td input{
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	padding:2px 1px;
+}
+
+
+td textarea{
+
+font-weight:normal;
+font-family:Arial;
+font-size:12px;
+
+}
+
+/* Applies to troublereport subheader "troubleinfo" 
+----------------------------------------------------*/
+/*
+.title {
+	font-family:Arial;
+	font-size:12px;
+	text-align:left;
+	vertical-align:middle;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: bold;
+	background:url(../images/section_title_bg.jpg);
+}*/
+.title { 
+	/* display: block; */ 
+	PADDING-BOTTOM: 0px;
+	text-transform: uppercase; 
+	LINE-HEIGHT: 16px; 
+	text-indent: 5px; 
+	PADDING-RIGHT: 0px; 
+	BACKGROUND: url(../images/SubsectionHeader.gif) repeat; 
+	BACKGROUND-POSITION: -20px top; 
+	HEIGHT: 14px; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	COLOR: #0066CC; 
+	PADDING-TOP: 0px; 
+	border: 1px solid #C5C5C5; 
+	cursor: pointer; 
+}
+
+
+.sections {
+	padding-left:5px;
+	padding-top:3px;
+	font-family:Arial;
+	font-weight: normal; 
+	font-size:12px;
+	width:100%
+}
+
+
+/* Apply to troublereport border between "troubleinfo" and "status" 
+--------------------------------------------------------------------*/
+
+.twocolumn_even_left {
+	padding:0 2px 0 0; 
+	margin:0; 
+	width:69%; 
+	border-right:1px solid #ccc;
+}
+
+
+/*  Apply for troubledetails border between Details and dispatch 
+-----------------------------------------------------------------*/
+
+.twocolumn_even_left1 {
+	padding:0 0px 0 0;
+	margin:0; 
+	width:40%;
+	border-right:1px solid #ccc;
+}
+
+
+
+/* For Grid / Table START  applies for status grid,committment grid and worklist summaries(desingned and non designed)*/
+table.tablecolors {
+	font-size: 12px;
+	border-collapse: collapse;
+	background-color: #FFF;
+	border: 1px solid #e3e3e3;
+}
+
+table.tablecolors thead tr,table.tablecolors thead td,table.tablecolors tr.header td,table.tablecolors tr.tblheader td
+	{
+	font-size: 12px;
+	border: 1px solid #e3e3e3;
+	background-color: #eee;
+	text-align: center;
+	border-collapse: collapse;
+	font-weight: bold;
+	line-height: normal;
+	vertical-align: center;
+	color: #666;
+}
+
+table.tablecolors td {
+	height: 13px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:3px;
+	padding-right:5px;
+	vertical-align: middle;
+	border: 1px solid #e3e3e3;
+	FONT-WEIGHT: 300;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: center;
+}
+
+table.tablecolors  tr:hover {
+	background: #ffffcc;
+}
+
+TABLE.tablecolors TBODY TR.hlightcolor
+{
+background: #f9d761;
+}
+
+table.tr.active{background :#f9d761;}
+
+/* For Grid / Table END */
+
+
+/*  Apply for troublereport "troubleinfo"((header)) fields and selects 
+-----------------------------------------------------------------------*/
+
+.gtrwgvt {
+	float:left;
+	width:105px;  margin-top:2px;
+}
+
+
+.gtrwgselect {
+	float:left;
+	width:80px;  margin-top:2px;
+}
+
+.gtrholderfield {
+	float:left;
+	width:80px;  margin-top:2px;
+}
+
+.gtrselecttrinfoholder {
+	float:left;
+	width:80px;  margin-top:2px;
+}
+
+
+.gtrgpholderdate {
+	float:left;
+	width:76px;  margin-top:2px;
+}
+
+
+.width250px {
+	width:250px;
+}
+
+.width80px {
+	width:80px;
+}
+
+.width79px {
+	width:79px !important;
+}
+
+.width40px {
+	width:40px;
+}
+
+.width60px {
+	width:60px;
+}
+
+
+.width160px {
+	width:160px;
+}
+
+.fleft {
+	float:left
+}
+
+
+.clear {
+	clear:both;
+}
+
+
+/*  Apply for troublereport "status"(header) fields and selects 
+----------------------------------------------------------------*/
+
+
+.gtrssp {
+	float:left;
+	padding-left:10px; width:30px;
+}
+
+.gtrselect2 {
+	float:left;
+	padding-left:0px;  margin-top:2px;
+}
+
+.statusreferedholder {
+	float:left;
+	width:80px;
+	margin-top:10px;
+}
+
+.margintop10px {
+margin-top:10px;
+}
+
+/* Apply to all widgets defined in Div tag 
+-------------------------------------------*/
+
+.textfields {
+	text-transform: uppercase;
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+}
+
+
+/* Apply to yellow indicator  - src style.css
+---------------------------------------------*/
+
+/*.trindicatorLabel {
+	font-family:Arial;
+	font-size:12px;
+	font-weight: normal;
+	color: #FFF;
+	text-align: left;
+	vertical-align: middle;
+	background-color:#474747;
+}
+.trindicator {
+	font-weight: normal;
+	color: #FFF;
+	text-align: left;
+	vertical-align: middle;
+	background-color:#474747;
+}*/
+
+
+/* expand,collapse image to be display properly
+------------------------------------------------*/
+
+img{
+	border:0;
+}
+
+/* All div elements should be aligned left  
+--------------------------------------------*/
+div {
+	text-align:left;
+}
+
+
+/* expand,collapse Color black and red  - src style.css
+-------------------------------------------------------*/
+
+.clstrtitle2{
+	font-weight:bold;
+	color:red !important;
+}
+.clstrtitle2 a{text-decoration:none!important;color:red!important;outline:none!important;}
+.clstrtitle2 a:link{text-decoration:none!important;color:red!important;outline:none!important;}
+
+.clstrtitle1{
+	 font-weight:bold;
+	 color: black;
+}
+
+
+
+/* WorkList designed summary tap  
+---------------------------------*/
+
+* { margin:0; padding:0;} /* All worklist Elements to be shrinked within the border  */
+
+
+.borderLabelRow{
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.borderLabelRowGray{
+	BACKGROUND-COLOR: #F0F1F5;
+}
+
+
+TD.borderlabelgray{
+	 border: 1px solid silver;
+	 padding: 2;
+	 spacing: 0;
+	 FONT-WEIGHT: 300;
+	 FONT-SIZE: 12px;
+	 TEXT-ALIGN:LEFT;
+	 COLOR: #000000;
+	 FONT-FAMILY: Arial, Verdana, Tahoma;
+}
+
+TD.borderlabel{
+	 border: 1px solid silver;
+	 padding: 2;
+	 spacing: 0;
+	 FONT-WEIGHT: 300;
+	 FONT-SIZE: 12px;
+	 TEXT-ALIGN:LEFT;
+	 COLOR: #000000;
+	 FONT-FAMILY: Arial, Verdana, Tahoma;
+}
+
+
+
+TD.theadgray {
+	border: 1px solid black;
+	padding: 2;
+	spacing: 0;
+	FONT-WEIGHT: 600;
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Verdana, Tahoma;
+	HEIGHT: 20px;
+	TEXT-ALIGN:center;
+	BACKGROUND-COLOR: #cccccc;
+}
+
+
+
+/* for spinner message 
+-------------------------*/
+
+.vr_spinner_msg {
+	margin: 4px 2px 4px 2px;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	font-family:Arial;
+}
+
+
+
+/* Applies to GTRM  grouptrouble page  
+--------------------------------------*/
+
+.tabholder {
+	width:100%;
+}
+
+.gtrwgNew {
+	float:left;
+	width:100px;
+	margin-top:2px;
+}
+
+.width100px {
+	width:100px;
+}
+
+.width110px {
+	width:110px;
+}
+
+.width200px{
+	width:200px;
+}
+
+.width220px{
+	width:220px;
+}
+
+.failureInfoStyle{
+	float:left;
+	width:80px;
+	padding-left:5px
+}
+
+
+width130px{
+	width:130px;
+}
+
+
+.gtrcate{
+	float:left;
+	width:50%;
+	border-right: 1px solid #ccc;
+}
+
+
+.gtrtrnarrNew {
+	float:left;
+	width:100px;
+	margin-top:2px;
+}
+
+.twocolumn_even_left {
+	padding:0 2px 0 0;
+	margin:0;
+	width:79%;
+	border-right:1px solid #ccc;
+}
+
+width128px {
+	width:128px;
+}
+
+width78px{
+	width:78px;
+}
+
+.width120px{
+	width:120px;
+}
+
+.width200px
+{
+	width:200px;
+}
+
+.width300px
+{
+	width:300px;
+}
+
+
+
+.width60pxmarleft80px {
+	width:60px;
+	margin-left:80px;
+}
+
+
+/* For GTRE
+-----------*/
+
+.width150px{
+	width:150px;
+}
+
+.mrgnRt20{
+	margin-right:20px;
+}
+
+.width130px{
+	width:130px;
+}
+
+.width200px{
+	width:200px;
+}
+
+.buttonholderred {
+	float:right;
+	margin-right:10px;
+}
+
+
+/*--------- Added common for all datetime fields
+class name defined using scriptlet method------- */
+
+
+.IC_DateTime_24HR {
+	font-size:12px;
+	font-family:Arial;
+	width:135px;
+}
+
+.IC_DateTime_12HR {
+	font-size:12px;
+	font-family:Arial;
+	width:135px;
+}
+
+.IC_DateTime_12 {
+	font-size:12px;
+	font-family:Arial;
+	width:135px;
+}
+
+.close {
+	background-color: #3E96D4;
+	font-weight:bold;
+	font-size: 12px;
+	font-family: Arial;
+	color: red;
+	cursor: hand;
+}
+
+
+/* used with topmenu code in toppanel.jsp 
+------------------------------------------*/
+
+.PopUpBg {
+	Z-INDEX: 1;
+	FILTER: alpha(opacity=50);
+	BACKGROUND-COLOR: #EEEEEE;
+	position: absolute;
+	top:0px;
+	left:0px;
+	display: none;
+	width:1175px;
+	height:905px;
+}
+
+/* used in commands,smartjump,timeout dialog headers 
+-----------------------------------------------------*/
+
+.popupHeader {
+	background-color: #3E96D4;
+	font-weight:bold;
+	font-size: 12px;
+	font-family: Arial;
+	color: white;
+}
+
+/* used with  enttroubleReport 
+-------------------------------*/
+
+.dropAllDivEnt {
+	 display: none;
+	 z-index:100000;
+	 position:absolute;
+	 background-color: #fff;
+	 left:250px;
+	 top :150px;
+}
+
+
+/* used with toppanel and enttroubleReport 
+-------------------------------------------*/
+
+.dropAllDiv {
+	display: none;
+	z-index:100000;
+	position:absolute;
+	background-color: #fff;
+	left:65%;
+	margin-left:-250px;
+	top :150px;
+}
+
+/* used with table header src global_blue,worklist_style 
+--------------------------------------------------------*/
+
+.fixthead{
+	position:relative;
+	z-index: 20;
+	height:15;
+	background-color: #f5f5f5;
+	cursor:pointer;
+}
+
+/* used in trouble details.jsp src vRepairold.css
+-------------------------------------------------*/
+
+.postRestoralDiv {
+	display: none;
+	z-index: 100000;
+	position: absolute;
+	background-color: #fff;
+	width: 960px;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+}
+
+
+.ui-timepicker-div .ui-widget-header {
+	margin-bottom: 8px;
+ }
+
+.ui-timepicker-div dl {
+	text-align: left;
+ }
+
+.ui-timepicker-div dl dt {
+	height: 25px;
+ }
+
+.ui-timepicker-div dl dd {
+	margin: -25px 0 10px 65px;
+ }
+
+.ui-timepicker-div td {
+	font-size: 90%;
+ }
+
+
+/* Applied in eventSummary.jsp 
+------------------------------*/
+
+.thinborder {
+	border: 1px solid #999999;
+	border-collapse: collapse; 
+	padding-left:1px;
+}
+
+
+html {
+	min-height:100%;
+	margin-bottom:1px;
+	filter:expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+
+/* Added for LineRecord search in customerinfosvc page */
+
+.formholdertxt2 {
+	float:left;
+	text-align:left;
+	width:90px;
+	margin-left:10px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+
+.formholdertxt {
+	float:left;
+	text-align:left;
+	width:90px;
+	margin-left:10px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+
+.maincontentlal {
+	float:left;
+	text-align:left;
+	width:120px;
+	font-weight:normal;
+	font-size: 12px;
+	font-family:Arial;
+}
+
+
+ .maincontentlal2 {
+	float:left;
+	text-align:left;
+	width:150px;
+	font-weight:normal;
+	font-size: 12px;
+	font-family:Arial;
+}
+
+
+.maincontentlal4 {
+	float:left;
+	text-align:left;
+	width:100px;
+	margin-left:10px;
+	font-weight:normal;
+	font-size: 12px;
+	font-family:Arial;
+}
+
+
+.maincontentlal5 {
+	float:left;
+	text-align:left;
+	font-weight:normal;
+	font-size: 12px;
+	font-family:Arial;
+}
+
+/* added for standalone remarks button */
+
+.buttonholdercancel {
+	float:right;
+	margin-right:5px;
+}
+.textfieldsNormal {
+	text-transform:none;
+	font-family:Arial; 
+	font-size:12px; 
+	font-weight:normal; 
+}
+.yellowColor{
+	BACKGROUND-COLOR: yellow;
+}
+/* added for spinner change */
+
+#loaderPanel { 
+border-top:2px solid #3F8CD9 !important;
+border-bottom:2px solid #3F8CD9 !important;
+border-left:2px solid #3F8CD9 !important;
+border-right:2px solid #3F8CD9 !important;
+background-color:#E8F2FF !important;
+display: block !important;
+margin:0% auto !important;
+padding:25px 0px !important;
+width:100% !important;
+color: #2179D3 !important;
+font-weight:bold !important;
+}
+fieldset legend.togglefsl {
+    background-image: url("../images/arrow_open_close.gif");
+    background-position: 4px 3px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0 5px 0 15px;
+}
+fieldset legend.active {
+    background-image: url("../images/arrow_open_close.gif");
+    background-position: 4px -20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding: 0 5px 2px 15px;
+}
+.boxes{
+	border-width:1px;
+	border-style:solid;
+	padding:6px;
+	font-size:14px!important;
+	color:#000;
+	min-height:22px;
+}
+.redboxes{
+	border-color:#CD0102;
+	background:#FEEEEE url(../images/tab_alert.gif) no-repeat;
+	background-position:5px 6px;
+	padding-left:30px;
+	min-height:22px;
+}
+.margin_top_10{
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+}
+.legendA{
+	cursor:pointer;color:#0066FF!important;text-decoration: none;
+}
+.divA{
+	cursor:pointer;color:#0066FF!important;text-decoration: none;
+}
+.etmsTemplatePopDev {
+	display: none;
+	z-index:100000;
+	position:absolute;
+	background-color: #fff;
+	left:40%;
+	margin-left:-250px;
+	top :350px;
+}
+.bold{font-weight: bold}
+.right{float:right !important}
+
+.overflowYHidden{overflow-y:hidden;}
+.overflowHidden{overflow:hidden;}
+#dsCircuitDetailsDiv label{line-height:19px;}
+ .label-w100{ width:100px}
+
+#tktListResultsDiv{margin-bottom: 5px;}
+.marginTopM5 {margin-top:-5px !important;}
+.marginLeft5 {margin-left:5px !important;}
+.marginBottom5 {margin-bottom: 5px;}
+.marginTop5 {
+	margin-top:5px;
+}
+.marginTop20 {
+	margin-top:20px;
+}
+.borderNone {border:0 none;}
+.floatNone{float:none !important}
+.whitespaceNoWrap{
+	white-space:nowrap;
+}
+.width152px {width:152px !important;}
+ .fontWeight600{font-weight:600 !important;}
+ .fontWeightBold{font-weight:bold !important;}
+ .width95px { 	width:95px; }
+ .width82px { 	width:82px; }
+ .width136px { width:136px; }
+ .width140px { width:140px; }
+ .width90px { width:90px; }
+ 
+ 
+ .oasisTable {
+    border-collapse: collapse;
+}
+
+ .oasisTH {
+ 	color:#666;
+    border: 1px solid black;
+    text-align: center;
+    background-color:#eee;
+    font: Arial, Verdana, Helvetica, sans-serif;
+    line-height: 12px;
+    color: #666;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.oasisTD {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*Chrome Migration CSS*/
+fieldset{
+	border: 1px solid #d5d5d5;
+}
+
+.inputClose{
+	/*background-image:url("../images/cross-01.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    right:25px;*/
+    background:url("../images/cross-01.png") no-repeat;
+    z-index: 9999;
+ 	background-position:98% 50%;
+}
+/* input[type=text]:focus
+{
+	background:url("../images/cross-01.png") no-repeat;
+    z-index: 9999;
+ background-position:98% 50%;
+    
+} */
+input[type=checkbox]{
+	-webkit-appearance: none;
+	width: 13px;
+	height: 13px;
+	border: 1px solid #999;/*shade of black towards white*/
+	background-color: #FFF;
+	padding:0px;
+}
+input[type=checkbox]:checked{
+	background-image:url("../images/tick-02.png");
+	background-size: contain;
+}
+input[type=checkbox]:disabled:checked{
+	background-color:#EEE;
+	cursor:not-allowed; 	
+	background-image:url("../images/tick-disable02.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+input[type=checkbox]:disabled{
+	background-color:#EEE;
+	cursor:not-allowed; 	
+}
+.bolder{font-weight: bolder}
+.no-border{border:none !important;}
+.align-center{ /* works only for block level elements */
+	margin: 0 auto;
+}
+
+/*Show Modal Dialog CSS*/ 
+.cover { 
+     position: absolute; 
+     height: 100%; 
+     width: 100%; 
+     top: 0; 
+     left: 0; 
+     background-color: rgba(0,0,0,0.5); 
+     z-index: 65000 
+ } 
+ .dialog { 
+     position: absolute; 
+     z-index: 65001; 
+     background-color: white; 
+ } 
+ .dialog iframe { width: 100%; height: 100%; border: 0; } 
+ /*Show Modal Dialog CSS*/ 
+
+.fontWeightBold strong{font-weight:900 !important;}
+
+td.title.no-border{
+	/* display: block; */
+	PADDING-BOTTOM: 0px;
+	text-transform: uppercase; 
+	LINE-HEIGHT: 16px; 
+	text-indent: 5px; 
+	PADDING-RIGHT: 0px; 
+	BACKGROUND: url(../images/SubsectionHeader.gif) repeat; 
+	BACKGROUND-POSITION: -20px top; 
+	HEIGHT: 14px; 
+	FONT-SIZE: 12px; 
+	FONT-WEIGHT: bold; 
+	COLOR: #0066CC; 
+	PADDING-TOP: 0px; 
+	border: 1px solid #C5C5C5; 
+	cursor: pointer; 
+}
+
+a {
+	color: #0066cc;
+}
+
+///////////////////////////////////////// Image Sprites styles ///////////////////////////////////
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+.repair-sprite, .repair-FiOSReady_NewOccupant, .repair-FiOSReady_SameOccupant, .repair-FiOSReady_SameOccupantComp, 
+.repair-FiOSReady_SameOccupantPriceSen, .repair-FiOSReady_SameOccupantServBill, .repair-SubsectionHeader, .repair-YellowCare,
+ .repair-alertmessege, .repair-alertmessegeRed, .repair-arrow, .repair-arrow_open_close, .repair-audio, .repair-blue_bg, .repair-border_top,
+  .repair-bottom_curve, .repair-bottom_scroll, .repair-bottom_scroll_disabled, .repair-buttonActive, .repair-buttonDisabled, .repair-buttonEnabled,
+   .repair-buttonHover, .repair-button_black, .repair-button_black_left, .repair-button_black_small, .repair-button_black_small_left, 
+   .repair-button_gray, .repair-button_gray_left, .repair-button_gray_small, .repair-button_gray_small_left, .repair-cal, .repair-cal_minus,
+    .repair-cal_plus, .repair-checked, .repair-circle_blue, .repair-circle_gray, .repair-circle_green, .repair-circle_red, .repair-circle_yellow, 
+    .repair-close_tab, .repair-cmd_menu, .repair-collapse, .repair-columns, .repair-commands, .repair-cross, .repair-dairy, .repair-date,
+     .repair-down, .repair-down_blue_arrow, .repair-employee_icon, .repair-evtacknowledge, .repair-evtclear, .repair-evthandled, .repair-evtnothandle,
+      .repair-evtoutstanding, .repair-evtpending, .repair-evtterminate, .repair-excel, .repair-expand, .repair-gradient_large_bg, 
+      .repair-gradient_med_bg, .repair-gradient_small_bg, .repair-grid_hd_btn, .repair-gtrMgmt, .repair-gtrm_menu, .repair-hmenu_asc,
+       .repair-hmenu_desc, .repair-iTools, .repair-ico_ActTimeline_ArrowLeft, .repair-ico_ActTimeline_ArrowRight, .repair-icons_bg,
+        .repair-input_button, .repair-inv_menu, .repair-item_over, .repair-left_arrow, .repair-leftdoublecalendar, .repair-leftsinglecalendar, 
+        .repair-links, .repair-login_stock_one, .repair-login_stock_three, .repair-login_stock_two, .repair-mandatory-symbol,
+         label.requiredFields, strong.requiredFields ,span.requiredFields, .repair-menu, .repair-menu_parent,
+          .repair-menuitem_submenuindicator_disabled, .repair-modal_bg, .repair-modal_close, .repair-multiple, .repair-multiple_d,
+           .repair-north_layout_bg, .repair-print_icon, .repair-repair3-s72c4794ab9, .repair-reporting, .repair-right, .repair-right_arrow, 
+           .repair-right_blue_arrow, .repair-rightdoublecalendar, .repair-rightsinglecalendar, .repair-row_expand_sprite, .repair-row_over,
+            .repair-rpt_menu, .repair-s, .repair-search_a, .repair-section_title_bg, .repair-singlerow, .repair-singlerow_d, .repair-sort_asc,
+             .repair-sort_desc, .repair-spriteArrows, .repair-sqdots, .repair-sso, .repair-start_icon, .repair-system, .repair-tabH_active_left,
+              .repair-tabH_active_right, .repair-tabH_inactive_left, .repair-tabH_inactive_right, .repair-tab_alert, .repair-tab_l, .repair-tab_m,
+               .repair-tab_r, .repair-test_menu, .repair-testing, .repair-text_bg, .repair-three_new, .repair-tick, .repair-tick_disable, 
+               .repair-tip_sprite, .repair-toggle_dn, .repair-toggle_up, .repair-toolbar_bg, .repair-tools_menu, .repair-top_scroll,
+                .repair-top_scroll_disabled, .repair-trMgmt, .repair-trans, .repair-transparent, .repair-tree, .repair-treeminus, .repair-treeplus,
+                 .repair-trentry_a, .repair-trigger, .repair-trindicators, .repair-trm_menu, .repair-trmgmnt_a, .repair-unchecked, .repair-vicon,
+                  .repair-vicon_d, .repair-video, .repair-wMgmt, .repair-warning, .repair-warning_menu, .repair-wfm_menu, .repair-whole_bg,
+                   .repair-wordlookup, .repair-worklist, .repair-workshop_icon, .repair-wrklist_menu, .repair-wrong {
+  background-image: url('../images/repair-s8e2c24765b.png');
+  background-repeat: no-repeat;
+}
+
+.repair-FiOSReady_NewOccupant {
+  background-position: 0 0;
+  height: 22px;
+  width: 119px;
+}
+
+.repair-FiOSReady_SameOccupant {
+  background-position: 0 0.37515%;
+  height: 22px;
+  width: 119px;
+}
+
+.repair-FiOSReady_SameOccupantComp {
+  background-position: 0 0.75029%;
+  height: 22px;
+  width: 119px;
+}
+
+.repair-FiOSReady_SameOccupantPriceSen {
+  background-position: 0 1.12544%;
+  height: 22px;
+  width: 119px;
+}
+
+.repair-FiOSReady_SameOccupantServBill {
+  background-position: 0 1.50059%;
+  height: 22px;
+  width: 119px;
+}
+
+.repair-SubsectionHeader {
+  background-position: 0 1.88103%;
+  height: 46px;
+  width: 2000px;
+}
+
+.repair-YellowCare {
+  background-position: 0 2.53165%;
+  height: 20px;
+  width: 53px;
+}
+
+.repair-alertmessege {
+  background-position: 0 2.88529%;
+  height: 26px;
+  width: 26px;
+}
+
+.repair-alertmessegeRed {
+  background-position: 0 3.30753%;
+  height: 26px;
+  width: 26px;
+}
+
+.repair-arrow {
+  background-position: 0 3.72627%;
+  height: 18px;
+  width: 18px;
+}
+
+.repair-arrow_open_close {
+  background-position: 0 4.06008%;
+  height: 30px;
+  width: 7px;
+}
+
+.repair-audio {
+  background-position: 0 4.51991%;
+  height: 12px;
+  width: 12px;
+}
+
+.repair-blue_bg {
+  background-position: 0 4.78368%;
+  height: 23px;
+  width: 1px;
+}
+
+.repair-border_top {
+  background-position: 0 5.15729%;
+  height: 1px;
+  width: 185px;
+}
+
+.repair-bottom_curve {
+  background-position: 0 5.29522%;
+  height: 16px;
+  width: 185px;
+}
+
+.repair-bottom_scroll {
+  background-position: 0 5.60309%;
+  height: 21px;
+  width: 185px;
+}
+
+.repair-bottom_scroll_disabled {
+  background-position: 0 5.96648%;
+  height: 21px;
+  width: 185px;
+}
+
+.repair-buttonActive {
+  background-position: 0 6.32986%;
+  height: 21px;
+  width: 3px;
+}
+
+.repair-buttonDisabled {
+  background-position: 0 6.69324%;
+  height: 21px;
+  width: 3px;
+}
+
+.repair-buttonEnabled {
+  background-position: 0 7.05744%;
+  height: 22px;
+  width: 1px;
+}
+
+.repair-buttonHover {
+  background-position: 0 7.43695%;
+  height: 27px;
+  width: 1px;
+}
+
+.repair-button_black {
+  background-position: 0 7.88484%;
+  height: 42px;
+  width: 600px;
+}
+
+.repair-button_black_left {
+  background-position: 0 8.49589%;
+  height: 42px;
+  width: 10px;
+}
+
+.repair-button_black_small {
+  background-position: 0 9.10052%;
+  height: 36px;
+  width: 600px;
+}
+
+.repair-button_black_small_left {
+  background-position: 0 9.64068%;
+  height: 36px;
+  width: 5px;
+}
+
+.repair-button_gray {
+  background-position: 0 10.18801%;
+  height: 42px;
+  width: 600px;
+}
+
+.repair-button_gray_left {
+  background-position: 0 10.79906%;
+  height: 42px;
+  width: 10px;
+}
+
+.repair-button_gray_small {
+  background-position: 0 11.40207%;
+  height: 36px;
+  width: 600px;
+}
+
+.repair-button_gray_small_left {
+  background-position: 0 11.94223%;
+  height: 36px;
+  width: 5px;
+}
+
+.repair-cal {
+  background-position: 0 12.45314%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-cal_minus {
+  background-position: 0 12.74728%;
+  height: 9px;
+  width: 13px;
+}
+
+.repair-cal_plus {
+  background-position: 0 12.96968%;
+  height: 9px;
+  width: 13px;
+}
+
+.repair-checked {
+  background-position: 0 13.20291%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-circle_blue {
+  background-position: 0 13.51383%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-circle_gray {
+  background-position: 0 13.86545%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-circle_green {
+  background-position: 0 14.21707%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-circle_red {
+  background-position: 0 14.56868%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-circle_yellow {
+  background-position: 0 14.9203%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-close_tab {
+  background-position: 0 15.25047%;
+  height: 8px;
+  width: 10px;
+}
+
+.repair-cmd_menu {
+  background-position: 0 15.51927%;
+  height: 40px;
+  width: 30px;
+}
+
+.repair-collapse {
+  background-position: 0 16.06327%;
+  height: 17px;
+  width: 22px;
+}
+
+.repair-columns {
+  background-position: 0 16.37769%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-commands {
+  background-position: 0 16.71165%;
+  height: 31px;
+  width: 22px;
+}
+
+.repair-cross {
+  background-position: 0 17.15457%;
+  height: 12px;
+  width: 12px;
+}
+
+.repair-dairy {
+  background-position: 0 17.42442%;
+  height: 18px;
+  width: 17px;
+}
+
+.repair-date {
+  background-position: 0 17.74628%;
+  height: 15px;
+  width: 14px;
+}
+
+.repair-down {
+  background-position: 0 18.02856%;
+  height: 10px;
+  width: 10px;
+}
+
+.repair-down_blue_arrow {
+  background-position: 0 18.25415%;
+  height: 6px;
+  width: 0px;
+  padding-left:8px;
+}
+
+.repair-employee_icon {
+  background-position: 0 18.51504%;
+  height: 40px;
+  width: 40px;
+}
+
+.repair-evtacknowledge {
+  background-position: 0 19.05767%;
+  height: 20px;
+  width: 26px;
+}
+
+.repair-evtclear {
+  background-position: 0 19.40928%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-evthandled {
+  background-position: 0 19.7609%;
+  height: 20px;
+  width: 24px;
+}
+
+.repair-evtnothandle {
+  background-position: 0 20.1078%;
+  height: 18px;
+  width: 21px;
+}
+
+.repair-evtoutstanding {
+  background-position: 0 20.4359%;
+  height: 18px;
+  width: 20px;
+}
+
+.repair-evtpending {
+  background-position: 0 20.76157%;
+  height: 17px;
+  width: 17px;
+}
+
+.repair-evtterminate {
+  background-position: 0 21.08285%;
+  height: 19px;
+  width: 19px;
+}
+
+.repair-excel {
+  background-position: 0 21.43527%;
+  height: 24px;
+  width: 24px;
+}
+
+.repair-expand {
+  background-position: 0 21.81605%;
+  height: 17px;
+  width: 23px;
+}
+
+.repair-gradient_large_bg {
+  background-position: 0 23.64501%;
+  height: 563px;
+  width: 6px;
+}
+
+.repair-gradient_med_bg {
+  background-position: 0 29.57357%;
+  height: 227px;
+  width: 5px;
+}
+
+.repair-gradient_small_bg {
+  background-position: 0 32.13095%;
+  height: 152px;
+  width: 4px;
+}
+
+.repair-grid_hd_btn {
+  background-position: 0 33.65091%;
+  height: 50px;
+  width: 28px;
+}
+
+.repair-gtrMgmt {
+  background-position: 0 34.26795%;
+  height: 28px;
+  width: 26px;
+}
+
+.repair-gtrm_menu {
+  background-position: 0 34.76269%;
+  height: 40px;
+  width: 46px;
+}
+
+.repair-hmenu_asc {
+  background-position: 0 35.2507%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-hmenu_desc {
+  background-position: 0 35.5553%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-iTools {
+  background-position: 0 35.9188%;
+  height: 30px;
+  width: 30px;
+}
+
+.repair-ico_ActTimeline_ArrowLeft {
+  background-position: 0 36.44805%;
+  height: 44px;
+  width: 22px;
+}
+
+.repair-ico_ActTimeline_ArrowRight {
+  background-position: 0 37.08275%;
+  height: 44px;
+  width: 22px;
+}
+
+.repair-icons_bg {
+  background-position: 0 37.79296%;
+  height: 61px;
+  width: 1001px;
+}
+
+.repair-input_button {
+  background-position: 0 38.90404%;
+  height: 121px;
+  width: 500px;
+}
+
+.repair-inv_menu {
+  background-position: 0 40.07284%;
+  height: 40px;
+  width: 35px;
+}
+
+.repair-item_over {
+  background-position: 0 40.56969%;
+  height: 21px;
+  width: 2px;
+}
+
+.repair-left_arrow {
+  background-position: 0 40.88036%;
+  height: 10px;
+  width: 10px;
+}
+
+.repair-leftdoublecalendar {
+  background-position: 0 41.14339%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-leftsinglecalendar {
+  background-position: 0 41.44799%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-links {
+  background-position: 0 41.77215%;
+  height: 20px;
+  width: 28px;
+}
+
+.repair-login_stock_one {
+  background-position: 0 43.73327%;
+  height: 334px;
+  width: 345px;
+}
+
+.repair-login_stock_three {
+  background-position: 0 47.9192%;
+  height: 334px;
+  width: 345px;
+}
+
+.repair-login_stock_two {
+  background-position: 0 52.10514%;
+  height: 334px;
+  width: 310px;
+}
+
+.repair-mandatory-symbol, label.requiredFields, strong.requiredFields ,span.requiredFields{
+  background-position: 0 54.12425%;
+  height: 5px;
+  width: 5px;
+  padding-left:7px;
+}
+
+.repair-menu {
+  background-position: 0 54.27435%;
+  height: 1px;
+  width: 250px;
+}
+
+.repair-menu_parent {
+  background-position: 0 54.45394%;
+  height: 9px;
+  width: 12px;
+}
+
+.repair-menuitem_submenuindicator_disabled {
+  background-position: 0 54.66355%;
+  height: 7px;
+  width: 12px;
+}
+
+.repair-modal_bg {
+  background-position: 0 55.01056%;
+  height: 30px;
+  width: 1px;
+}
+
+.repair-modal_close {
+  background-position: 0 55.37597%;
+  height: 14px;
+  width: 15px;
+}
+
+.repair-multiple {
+  background-position: 0 55.6962%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-multiple_d {
+  background-position: 0 56.04782%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-north_layout_bg {
+  background-position: 0 56.6651%;
+  height: 60px;
+  width: 27px;
+}
+
+.repair-print_icon {
+  background-position: 0 57.19306%;
+  height: 16px;
+  width: 19px;
+}
+
+.repair-repair3-s72c4794ab9 {
+  background-position: 0 58.57501%;
+  height: 173px;
+  width: 50px;
+}
+
+.repair-reporting {
+  background-position: 0 59.73249%;
+  height: 29px;
+  width: 24px;
+}
+
+.repair-right {
+  background-position: 0 60.05619%;
+  height: 10px;
+  width: 10px;
+}
+
+.repair-right_arrow {
+  background-position: 0 60.29033%;
+  height: 10px;
+  width: 10px;
+}
+
+.repair-right_blue_arrow {
+    background-position: 0 60.51738%;
+    height: 9px;
+    width: 0px;
+    padding-left: 8px;
+}
+
+.repair-rightdoublecalendar {
+  background-position: 0 60.7896%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-rightsinglecalendar {
+  background-position: 0 61.09419%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-row_expand_sprite {
+  background-position: 0 61.3844%;
+  height: 14px;
+  width: 50px;
+}
+
+.repair-row_over {
+  background-position: 0 61.77402%;
+  height: 29px;
+  width: 1px;
+}
+
+.repair-rpt_menu {
+  background-position: 0 62.31203%;
+  height: 40px;
+  width: 35px;
+}
+
+.repair-s {
+  background-position: 0 62.61256%;
+  height: 1px;
+  width: 1px;
+}
+
+.repair-search_a {
+  background-position: 0 62.86618%;
+  height: 18px;
+  width: 49px;
+}
+
+.repair-section_title_bg {
+  background-position: 0 63.17948%;
+  height: 16px;
+  width: 2px;
+}
+
+.repair-singlerow {
+  background-position: 0 63.51383%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-singlerow_d {
+  background-position: 0 63.86545%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-sort_asc {
+  background-position: 0 64.10436%;
+  height: 5px;
+  width: 13px;
+}
+
+.repair-sort_desc {
+  background-position: 0 64.27986%;
+  height: 5px;
+  width: 13px;
+}
+
+.repair-spriteArrows {
+  background-position: 0 64.47045%;
+  height: 7px;
+  width: 56px;
+}
+
+.repair-sqdots {
+  background-position: 0 64.73758%;
+  height: 16px;
+  width: 17px;
+}
+
+.repair-sso {
+  background-position: 0 65.22556%;
+  height: 40px;
+  width: 39px;
+}
+
+.repair-start_icon {
+  background-position: 0 65.81297%;
+  height: 40px;
+  width: 40px;
+}
+
+.repair-system {
+  background-position: 0 66.18267%;
+  height: 12px;
+  width: 12px;
+}
+
+.repair-tabH_active_left {
+  background-position: 0 66.81583%;
+  height: 60px;
+  width: 20px;
+}
+
+.repair-tabH_active_right {
+  background-position: 0 67.64013%;
+  height: 60px;
+  width: 200px;
+}
+
+.repair-tabH_inactive_left {
+  background-position: 0 68.46444%;
+  height: 60px;
+  width: 20px;
+}
+
+.repair-tabH_inactive_right {
+  background-position: 0 69.28874%;
+  height: 60px;
+  width: 200px;
+}
+
+.repair-tab_alert {
+  background-position: 0 69.75981%;
+  height: 17px;
+  width: 20px;
+}
+
+.repair-tab_l {
+  background-position: 0 70.28202%;
+  height: 42px;
+  width: 30px;
+}
+
+.repair-tab_m {
+  background-position: 0 70.89307%;
+  height: 42px;
+  width: 6px;
+}
+
+.repair-tab_r {
+  background-position: 0 71.50411%;
+  height: 42px;
+  width: 30px;
+}
+
+.repair-test_menu {
+  background-position: 0 72.09821%;
+  height: 40px;
+  width: 45px;
+}
+
+.repair-testing {
+  background-position: 0 72.60033%;
+  height: 30px;
+  width: 30px;
+}
+
+.repair-text_bg {
+  background-position: 0 72.96696%;
+  height: 18px;
+  width: 1px;
+}
+
+.repair-three_new {
+  background-position: 0 73.64889%;
+  height: 59px;
+  width: 383px;
+}
+
+.repair-tick {
+  background-position: 0 74.93779%;
+  height: 113px;
+  width: 113px;
+}
+
+.repair-tick_disable {
+  background-position: 0 76.15167%;
+  height: 86px;
+  width: 111px;
+}
+
+.repair-tip_sprite {
+  background-position: 0 85.2175%;
+  height: 874px;
+  width: 500px;
+}
+
+.repair-toggle_dn {
+  background-position: 0 86.89599%;
+  height: 5px;
+  width: 35px;
+}
+
+.repair-toggle_up {
+  background-position: 0 87.07149%;
+  height: 5px;
+  width: 35px;
+}
+
+.repair-toolbar_bg {
+  background-position: 0 87.81206%;
+  height: 60px;
+  width: 1000px;
+}
+
+.repair-tools_menu {
+  background-position: 0 88.4281%;
+  height: 40px;
+  width: 40px;
+}
+
+.repair-top_scroll {
+  background-position: 0 88.80684%;
+  height: 20px;
+  width: 185px;
+}
+
+.repair-top_scroll_disabled {
+  background-position: 0 89.15846%;
+  height: 20px;
+  width: 185px;
+}
+
+.repair-trMgmt {
+  background-position: 0 89.57307%;
+  height: 26px;
+  width: 31px;
+}
+
+.repair-trans {
+  background-position: 0 90.14333%;
+  height: 40px;
+  width: 40px;
+}
+
+.repair-transparent {
+  background-position: 0 90.31692%;
+  height: 1px;
+  width: 1px;
+}
+
+.repair-tree {
+  background-position: 0 90.75334%;
+  height: 30px;
+  width: 400px;
+}
+
+.repair-treeminus {
+  background-position: 0 91.03044%;
+  height: 12px;
+  width: 12px;
+}
+
+.repair-treeplus {
+  background-position: 0 91.27737%;
+  height: 11px;
+  width: 11px;
+}
+
+.repair-trentry_a {
+  background-position: 0 92.06218%;
+  height: 61px;
+  width: 87px;
+}
+
+.repair-trigger {
+  background-position: 0 92.49531%;
+  height: 24px;
+  width: 102px;
+}
+
+.repair-trindicators {
+  background-position: 0 92.894%;
+  height: 24px;
+  width: 124px;
+}
+
+.repair-trm_menu {
+  background-position: 0 93.46805%;
+  height: 40px;
+  width: 35px;
+}
+
+.repair-trmgmnt_a {
+  background-position: 0 94.28807%;
+  height: 61px;
+  width: 87px;
+}
+
+.repair-unchecked {
+  background-position: 0 94.62277%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-vicon {
+  background-position: 0 94.97187%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-vicon_d {
+  background-position: 0 95.32349%;
+  height: 20px;
+  width: 20px;
+}
+
+.repair-video {
+  background-position: 0 95.58548%;
+  height: 12px;
+  width: 12px;
+}
+
+.repair-wMgmt {
+  background-position: 0 96.02299%;
+  height: 28px;
+  width: 28px;
+}
+
+.repair-warning {
+  background-position: 0 96.33318%;
+  height: 16px;
+  width: 16px;
+}
+
+.repair-warning_menu {
+  background-position: 0 96.91024%;
+  height: 40px;
+  width: 25px;
+}
+
+.repair-wfm_menu {
+  background-position: 0 97.49765%;
+  height: 40px;
+  width: 48px;
+}
+
+.repair-whole_bg {
+  background-position: 0 97.79782%;
+  height: 15px;
+  width: 185px;
+}
+
+.repair-wordlookup {
+  background-position: 0 98.11365%;
+  height: 17px;
+  width: 13px;
+}
+
+.repair-worklist {
+  background-position: 0 98.5339%;
+  height: 26px;
+  width: 28px;
+}
+
+.repair-workshop_icon {
+  background-position: 0 99.11889%;
+  height: 40px;
+  width: 40px;
+}
+
+.repair-wrklist_menu {
+  background-position: 0 99.7063%;
+  height: 40px;
+  width: 25px;
+}
+
+.repair-wrong {
+  background-position: 0 100%;
+  height: 15px;
+  width: 14px;
+}

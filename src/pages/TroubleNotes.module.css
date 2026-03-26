@@ -1,0 +1,55 @@
+/* ─── TroubleNotes – Canvas Design System tokens only ─── */
+
+/* ─── Page container ─── */
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  color: var(--color-text);
+  padding: var(--spacing-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+/* ─── Section label ─── */
+.sectionLabel {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  display: block;
+  margin-bottom: var(--spacing-2);
+}
+
+/* ─── Textarea ─── */
+.textarea {
+  width: 100%;
+  min-height: 200px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-5);
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.textarea:focus {
+  border-color: var(--color-border);
+}
+
+.textareaReadonly {
+  composes: textarea;
+  background-color: var(--color-grey-2);
+  cursor: default;
+}
+
+/* ─── Action bar ─── */
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--spacing-4);
+}

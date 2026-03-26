@@ -1,0 +1,74 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface, #fff);
+}
+
+.section {
+  padding: var(--spacing-12);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-size: var(--font-size-label, 11px);
+  font-weight: 600;
+  color: var(--color-text-secondary, #6e6e6e);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.value {
+  font-size: var(--font-size-body, 13px);
+  color: var(--color-text-primary, #1b1b1b);
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.subSection {
+  margin-top: var(--spacing-12);
+  padding-top: var(--spacing-12);
+  border-top: 1px solid var(--color-border-light, #e0e0e0);
+}
+
+.subTitle {
+  font-size: var(--font-size-label, 11px);
+  font-weight: 700;
+  color: var(--color-text-secondary, #6e6e6e);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-8);
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-24);
+  font-size: var(--font-size-body, 13px);
+  color: var(--color-text-secondary, #6e6e6e);
+}
+
+.errorState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-24);
+  font-size: var(--font-size-body, 13px);
+  color: var(--color-text-error, #d32f2f);
+}

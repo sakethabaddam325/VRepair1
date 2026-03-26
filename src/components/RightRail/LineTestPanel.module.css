@@ -1,0 +1,102 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface, #fff);
+}
+
+.section {
+  padding: var(--spacing-12);
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-12);
+}
+
+.buttonRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.loadingIndicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-12);
+  font-size: var(--font-size-body, 13px);
+  color: var(--color-text-secondary, #6e6e6e);
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-border-light, #e0e0e0);
+  border-top-color: var(--color-primary, #0066ff);
+  border-radius: var(--radius-round, 50%);
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resultsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resultItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-8) 0;
+  border-bottom: 1px solid var(--color-border-light, #e0e0e0);
+}
+
+.resultItem:last-child {
+  border-bottom: none;
+}
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolName {
+  font-size: var(--font-size-body, 13px);
+  font-weight: 600;
+  color: var(--color-text-primary, #1b1b1b);
+}
+
+.resultText {
+  font-size: var(--font-size-label, 11px);
+  color: var(--color-text-secondary, #6e6e6e);
+  padding-left: var(--spacing-4);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8) 0;
+  margin-top: var(--spacing-8);
+  border-top: 1px solid var(--color-border-light, #e0e0e0);
+  font-size: var(--font-size-body, 13px);
+  font-weight: 600;
+  color: var(--color-text-primary, #1b1b1b);
+}
+
+.noResults {
+  padding: var(--spacing-12);
+  font-size: var(--font-size-body, 13px);
+  color: var(--color-text-secondary, #6e6e6e);
+  text-align: center;
+}

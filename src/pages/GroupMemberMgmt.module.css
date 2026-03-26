@@ -1,0 +1,119 @@
+/* GroupMemberMgmt – all styling via Canvas design tokens, no inline colors */
+
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  padding: var(--spacing-8);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Page Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-8);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+}
+
+.headerTitle {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-body);
+  color: var(--color-text);
+}
+
+.headerMeta {
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+}
+
+/* ── Section Panels ── */
+.section {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-10);
+  padding: var(--spacing-8);
+  background-color: var(--color-bg);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sectionHeader {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-8);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+/* ── Action Button Row ── */
+.actionBar {
+  display: flex;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+/* ── Attach Modal: Search Row ── */
+.searchRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-10);
+}
+
+.searchLabel {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.searchInput {
+  width: 200px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  padding: var(--spacing-4) var(--spacing-8);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.searchInput:focus {
+  border-color: var(--color-primary);
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-disabled);
+}
+
+/* ── Empty / No-Results Hint ── */
+.emptyHint {
+  color: var(--color-text-disabled);
+  font-style: italic;
+  font-size: var(--font-size-caption);
+}
+
+/* ── Detach Confirm Body ── */
+.confirmBody {
+  margin: var(--spacing-12) 0;
+  font-size: var(--font-size-label);
+  color: var(--color-text);
+}
+
+/* ── Modal Footer ── */
+.modalFooter {
+  display: flex;
+  gap: var(--spacing-8);
+}

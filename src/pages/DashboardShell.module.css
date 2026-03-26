@@ -1,0 +1,58 @@
+/* ─── Row 1: Primary Tab Bar (red stroke on top) ─── */
+.primaryTabBar {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--color-border-light);
+  padding: 0 var(--spacing-24);
+  background: var(--color-bg);
+}
+
+/* ─── Row 2: Ticket Tab Bar (red stroke on bottom) ─── */
+.ticketTabBar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  border-bottom: 1px solid var(--color-border-light);
+  padding: 0 var(--spacing-24);
+  background: var(--color-grey-2);
+  overflow-x: auto;
+  min-height: calc(var(--spacing-32) + var(--spacing-12));
+}
+
+.tabWrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.closeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-grey-4);
+  padding: var(--spacing-2);
+  margin-left: calc(-1 * var(--spacing-6));
+  margin-right: var(--spacing-4);
+  border-radius: var(--radius-sm);
+  transition: color 0.12s ease, background 0.12s ease;
+}
+
+.closeBtn:hover {
+  color: var(--color-text);
+  background: var(--color-grey-2);
+}
+
+/* ─── Placeholder for future tabs ─── */
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-32);
+  font-family: var(--font-family);
+  font-size: var(--font-size-title);
+  color: var(--color-grey-4);
+  min-height: 18.75rem;
+}

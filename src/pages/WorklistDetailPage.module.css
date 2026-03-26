@@ -1,0 +1,413 @@
+/* ─── WorklistDetailPage ─── */
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--font-family);
+  overflow: hidden;
+  background: var(--color-bg-page);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+}
+
+/* ─── Toolbar ─── */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8) var(--spacing-12);
+  padding: var(--spacing-8) var(--spacing-16);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border-light);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  min-height: calc(var(--spacing-32) + var(--spacing-8));
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.toolbarLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-6) var(--spacing-10);
+  flex-wrap: wrap;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.toolbarRight {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12);
+  margin-left: auto;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  padding-left: var(--spacing-8);
+}
+
+.lastRefresh {
+  font-size: var(--font-size-caption);
+  color: var(--color-grey-4);
+  white-space: nowrap;
+}
+
+.recordLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-5);
+  white-space: nowrap;
+}
+
+.recordValue {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-red-3);
+}
+
+/* Keep legacy class for backwards compat */
+.recordCount {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-5);
+  white-space: nowrap;
+}
+
+.toolbarDivider {
+  height: var(--spacing-24);
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* ─── Bulk Actions Bar ─── */
+.bulkBar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-6) var(--spacing-16);
+  background: var(--color-yellow-1);
+  border-bottom: 1px solid var(--color-yellow-2);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.bulkBarLabel {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-6);
+  margin-right: var(--spacing-4);
+  white-space: nowrap;
+}
+
+.bulkGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.bulkDivider {
+  height: var(--spacing-20);
+  margin: 0 var(--spacing-4);
+  flex-shrink: 0;
+}
+
+/* ─── Expand/Collapse All Button ─── */
+.expandCollapseRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--spacing-4) var(--spacing-16);
+}
+
+.expandCollapseBtn {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* ─── Table Content ─── */
+.tableContainer {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 0;
+}
+
+/* ─── Type group sections ─── */
+.typeGroup {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.typeGroupHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-8) var(--spacing-16);
+  background: var(--color-grey-2);
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-6);
+  border-bottom: 1px solid var(--color-border-light);
+  transition: background 0.15s ease;
+}
+
+.typeGroupHeader:hover {
+  background: var(--color-grey-3);
+}
+
+.typeGroupLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  cursor: pointer;
+}
+
+.typeGroupCount {
+  margin-left: var(--spacing-4);
+}
+
+.typeGroupBody {
+  overflow: hidden;
+}
+
+/* ─── Data table within each group ─── */
+.ticketTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-caption);
+  table-layout: fixed;
+}
+
+.ticketTable thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: var(--spacing-6) var(--spacing-8);
+  background: var(--color-grey-2);
+  color: var(--color-grey-5);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  border-bottom: 2px solid var(--color-border-light);
+  white-space: nowrap;
+  font-size: var(--font-size-caption);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ticketTable tbody tr {
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.ticketTable tbody tr:hover {
+  background: var(--color-grey-2);
+}
+
+/* Zebra striping for data rows */
+.rowEven {
+  background: var(--color-bg);
+}
+
+.rowOdd {
+  background: var(--color-bg-page);
+}
+
+.rowEven:hover,
+.rowOdd:hover {
+  background: var(--color-grey-2);
+}
+
+.ticketTable tbody td {
+  padding: var(--spacing-5) var(--spacing-8);
+  border-bottom: 1px solid var(--color-border-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--color-grey-6);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+}
+
+/* NM-stat rows: subtle red tint */
+.rowNm {
+  background: color-mix(in srgb, var(--color-red-1) 25%, var(--color-bg));
+}
+
+.rowNm:hover {
+  background: color-mix(in srgb, var(--color-red-1) 45%, var(--color-bg));
+}
+
+/* Selected row */
+.rowSelected {
+  background: var(--color-yellow-1);
+}
+
+.rowSelected:hover {
+  background: var(--color-yellow-2);
+}
+
+/* NM + Selected */
+.rowNmSelected {
+  background: var(--color-yellow-2);
+}
+
+.rowNmSelected:hover {
+  background: var(--color-yellow-2);
+}
+
+.checkboxCell {
+  width: calc(var(--spacing-32) + var(--spacing-4));
+  min-width: calc(var(--spacing-32) + var(--spacing-4));
+  max-width: calc(var(--spacing-32) + var(--spacing-4));
+  text-align: center;
+  padding-left: var(--spacing-8);
+}
+
+/* TR link */
+.trLink {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Milliard', var(--font-family);
+  font-size: var(--font-size-caption);
+  color: var(--color-red-3);
+  text-decoration: underline;
+  cursor: pointer;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.trLink:hover {
+  color: var(--color-red-2);
+}
+
+.trLink:focus-visible {
+  outline: 2px solid var(--color-blue-3);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─── Context Menu ─── */
+.contextMenu {
+  position: fixed;
+  z-index: 9999;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-4) 0;
+  min-width: 200px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.contextMenuGroup {
+  padding: var(--spacing-4) 0;
+}
+
+.contextMenuDivider {
+  margin: var(--spacing-2) 0;
+}
+
+.contextMenuGroupLabel {
+  padding: var(--spacing-2) var(--spacing-12);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contextMenuItem {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-4) var(--spacing-12);
+  text-align: left;
+  font-size: var(--font-size-caption);
+  color: var(--color-grey-6);
+  white-space: nowrap;
+  border-radius: 0;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.contextMenuItem:hover {
+  background: var(--color-grey-2);
+  color: var(--color-red-3);
+}
+
+/* ─── Pagination / Footer ─── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--spacing-10) var(--spacing-16);
+  border-top: 2px solid var(--color-border-light);
+  background: var(--color-bg);
+  flex-shrink: 0;
+  gap: var(--spacing-12);
+}
+
+/* ─── Loading / Error ─── */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-32);
+  flex: 1;
+}
+
+/* ─── More-actions dropdown in bulk bar ─── */
+.moreDropdownWrap {
+  position: relative;
+}
+
+.moreDropdownMenu {
+  position: absolute;
+  top: calc(100% + var(--spacing-4));
+  left: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-4) 0;
+  min-width: 180px;
+}
+
+.moreDropdownItem {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-4) var(--spacing-12);
+  text-align: left;
+  font-size: var(--font-size-caption);
+  color: var(--color-grey-6);
+  white-space: nowrap;
+  border-radius: 0;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.moreDropdownItem:hover {
+  background: var(--color-grey-2);
+  color: var(--color-red-3);
+}
+
+/* ─── Column widths via table-layout: fixed ─── */
+.colCheckbox { width: calc(var(--spacing-32) + var(--spacing-4)); }
+.colTr { width: 10%; }
+.colTnCircuit { width: 25%; }
+.colType { width: 8%; }
+.colRptdDt { width: 14%; }
+.colCommDt { width: 14%; }
+.colStat { width: 7%; }
+.colStatusDt { width: 14%; }
+
+/* ─── Keyboard focus styles ─── */
+.typeGroupLabel:focus-visible {
+  outline: 2px solid var(--color-blue-3);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}

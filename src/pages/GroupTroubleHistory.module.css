@@ -1,0 +1,98 @@
+/* ─── GroupTroubleHistory – Canvas Design System tokens ─── */
+
+.container {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  padding: var(--spacing-5);
+}
+
+/* ─── Filter Toolbar ─── */
+.filterToolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-10);
+  margin-bottom: var(--spacing-5);
+}
+
+.filterLabel {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.filterSelect {
+  width: 180px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-2) var(--spacing-4);
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: var(--color-border);
+}
+
+.productSelect {
+  composes: filterSelect;
+  width: 200px;
+}
+
+/* ─── Grid Sections ─── */
+.gridSection {
+  margin-bottom: var(--spacing-8);
+}
+
+/* ─── Associated History Header Row ─── */
+.sectionHeader {
+  margin-bottom: var(--spacing-5);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.sectionTitle {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+/* ─── ETMS History ─── */
+.etmsSection {
+  margin-top: var(--spacing-10);
+}
+
+.etmsHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-5);
+}
+
+.etmsGridWrapper {
+  width: 1030px;
+  height: 450px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+}
+
+.productCounts {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  color: var(--color-text);
+}
+
+/* ─── Row Checkbox (inside DataGrid cell) ─── */
+.rowCheckbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
